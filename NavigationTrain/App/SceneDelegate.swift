@@ -10,16 +10,15 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let cardinalCoordinator = CardinalCoordinator()
-
+    let cardinalCoordinator: CardinalCoordinatorProtocol = CardinalCoordinator.shared
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        
-        let vcToOpen = cardinalCoordinator.start(direction: .Auth)
-        window?.rootViewController = UINavigationController(rootViewController: vcToOpen)
+        let navController = cardinalCoordinator.start(direction: .Auth)
+        window?.rootViewController = navController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

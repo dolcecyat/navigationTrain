@@ -7,25 +7,40 @@
 
 import Foundation
 import UIKit
-protocol CardinalCoordinatorProtocol: AnyObject {
+
+enum StartingDirections {
+   case PIN
+   case Auth
 }
 
-class CardinalCoordinator: CardinalCoordinatorProtocol {
+protocol CardinalCoordinatorProtocol: AnyObject {
+    func start(direction: StartingDirections) -> UINavigationController
+}
+
+class CardinalCoordinator {
+    static let shared = CardinalCoordinator()
+    var navigationController: UINavigationController?
     
-    enum Directions {
-       case PIN
-       case Auth
-   }
+
+    func lala() {
+        
+    }
+}
+
+extension CardinalCoordinator: CardinalCoordinatorProtocol {
     
-    func start(direction: Directions)-> UIViewController {
-        var vcToOpen = UIViewController()
+    func start(direction: StartingDirections)-> UINavigationController {
+        var navCont = UINavigationController()
         switch direction {
         case .PIN:
             print("1")
         case .Auth:
             let childCoordinator = AuthCoordinator()
-            vcToOpen = childCoordinator.showAuthScreen()
+            let vcToOpen = childCoordinator.showAuthScreen()
+            navCont = UINavigationController(rootViewController: vcToOpen)
+            navigationController = navCont
         }
-        return vcToOpen
+        navigationController?.navigationBar.tintColor = .black
+        return navCont
     }
 }

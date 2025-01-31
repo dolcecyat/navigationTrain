@@ -14,7 +14,7 @@ protocol SignUpFactoryProtocol {
     func makeSignUp() -> SignUpDisplayLogic
 }
 
-final class SignUpFactory: SignUpFactoryProtocol, VIPModuleFactory {
+final class SignUpFactory: SignUpFactoryProtocol {
     var configurator: SignUpConfiguratorProtocol
     
     init(configurator: SignUpConfiguratorProtocol) {

@@ -14,7 +14,7 @@ protocol SignUpRoutingLogic {
 }
 
 class SignUpRouter: NSObject, SignUpRoutingLogic {
-    var parentCoordinator: AuthCoordinatorProtocol?
+    var coordinator: AuthCoordinatorProtocol?
     weak var viewController: UIViewController?
     
     func showPinScreen() {

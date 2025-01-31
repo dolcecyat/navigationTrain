@@ -14,7 +14,7 @@ protocol AuthFactoryProtocol {
     func makeAuth() -> AuthDisplayLogic
 }
 
-final class AuthFactory: AuthFactoryProtocol, VIPModuleFactory {
+final class AuthFactory: AuthFactoryProtocol {
     var configurator: AuthConfiguratorProtocol
     
     init(configurator: AuthConfiguratorProtocol) {

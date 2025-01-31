@@ -29,7 +29,16 @@
 		412C799B2D4B7CBE006D9383 /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79912D4B7CBE006D9383 /* SignUpConfigurator.swift */; };
 		412C799D2D4B7CBE006D9383 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79932D4B7CBE006D9383 /* SignUpFactory.swift */; };
 		412C799E2D4B7CBE006D9383 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79952D4B7CBE006D9383 /* SignUpPresenter.swift */; };
-		412C79A02D4B7DBC006D9383 /* ModuleFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C799F2D4B7DBC006D9383 /* ModuleFactoryProtocol.swift */; };
+		412C79AB2D4CFBA4006D9383 /* PINCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */; };
+		412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */; };
+		412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */; };
+		412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */; };
+		412C79AF2D4CFBA4006D9383 /* PINCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */; };
+		412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */; };
+		412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */; };
+		412C79B52D4D03F1006D9383 /* PinCodeCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B42D4D03F1006D9383 /* PinCodeCircles.swift */; };
+		412C79B72D4D096A006D9383 /* NumbersInputStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B62D4D096A006D9383 /* NumbersInputStack.swift */; };
+		412C79B92D4D29E4006D9383 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B82D4D29E4006D9383 /* UIImageView+.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		F413557318C8D8259A70C771 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF46C65421D4EB8642946943 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +68,16 @@
 		412C79952D4B7CBE006D9383 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		412C79962D4B7CBE006D9383 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		412C79972D4B7CBE006D9383 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		412C799F2D4B7DBC006D9383 /* ModuleFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryProtocol.swift; sourceTree = "<group>"; };
+		412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeConfigurator.swift; sourceTree = "<group>"; };
+		412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeCoordinator.swift; sourceTree = "<group>"; };
+		412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeFactory.swift; sourceTree = "<group>"; };
+		412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeInteractor.swift; sourceTree = "<group>"; };
+		412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodePresenter.swift; sourceTree = "<group>"; };
+		412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeRouter.swift; sourceTree = "<group>"; };
+		412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeViewController.swift; sourceTree = "<group>"; };
+		412C79B42D4D03F1006D9383 /* PinCodeCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeCircles.swift; sourceTree = "<group>"; };
+		412C79B62D4D096A006D9383 /* NumbersInputStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersInputStack.swift; sourceTree = "<group>"; };
+		412C79B82D4D29E4006D9383 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		DD154A4D0814C81D5EA70614 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
 		DF46C65421D4EB8642946943 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +129,6 @@
 				4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */,
 				412C79902D4B7C42006D9383 /* AuthModules */,
 				411BD8FD2D48195E002252CA /* App */,
-				4133DE9D2D4821F900AE84EB /* MainModule */,
 				411FE5242D48EFDC006A5FF9 /* Resourses */,
 				411FE51F2D48EF12006A5FF9 /* Extentions */,
 				411BD8FF2D48195E002252CA /* Info.plist */,
@@ -133,7 +150,7 @@
 			children = (
 				41D7D2322D4A50AF002F76B9 /* CustomUIKit */,
 				411BD8FE2D48195E002252CA /* Assets.xcassets */,
-				412C799F2D4B7DBC006D9383 /* ModuleFactoryProtocol.swift */,
+				412C79B82D4D29E4006D9383 /* UIImageView+.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -171,7 +188,15 @@
 		412C79902D4B7C42006D9383 /* AuthModules */ = {
 			isa = PBXGroup;
 			children = (
-				4183B9412D48E353008536B2 /* AuthModule */,
+				411FE5122D48EC0A006A5FF9 /* AuthCoordinator.swift */,
+				411FE52A2D4A4B32006A5FF9 /* AuthVIPR */,
+				412C79A12D4B8081006D9383 /* SignUpVIPR */,
+				412C79B22D4CFBB3006D9383 /* PINCodeVIPR */,
+				412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */,
+				412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */,
+				412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */,
+				412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */,
+				412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */,
 				411FE52C2D4A4B63006A5FF9 /* Managers */,
 			);
 			path = AuthModules;
@@ -198,21 +223,21 @@
 			path = SighUPBuilders;
 			sourceTree = "<group>";
 		};
-		4133DE9D2D4821F900AE84EB /* MainModule */ = {
+		412C79B22D4CFBB3006D9383 /* PINCodeVIPR */ = {
 			isa = PBXGroup;
 			children = (
+				412C79B32D4CFBD2006D9383 /* PINCodeBuilders */,
 			);
-			path = MainModule;
+			path = PINCodeVIPR;
 			sourceTree = "<group>";
 		};
-		4183B9412D48E353008536B2 /* AuthModule */ = {
+		412C79B32D4CFBD2006D9383 /* PINCodeBuilders */ = {
 			isa = PBXGroup;
 			children = (
-				411FE5122D48EC0A006A5FF9 /* AuthCoordinator.swift */,
-				411FE52A2D4A4B32006A5FF9 /* AuthVIPR */,
-				412C79A12D4B8081006D9383 /* SignUpVIPR */,
+				412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */,
+				412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */,
 			);
-			path = AuthModule;
+			path = PINCodeBuilders;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {
@@ -220,6 +245,8 @@
 			children = (
 				411FE5252D48F01F006A5FF9 /* LogInPasswordTextField.swift */,
 				411FE5272D48F658006A5FF9 /* AuthButton.swift */,
+				412C79B42D4D03F1006D9383 /* PinCodeCircles.swift */,
+				412C79B62D4D096A006D9383 /* NumbersInputStack.swift */,
 			);
 			path = CustomUIKit;
 			sourceTree = "<group>";
@@ -362,22 +389,31 @@
 				412C799A2D4B7CBE006D9383 /* SignUpViewController.swift in Sources */,
 				412C799B2D4B7CBE006D9383 /* SignUpConfigurator.swift in Sources */,
 				412C799D2D4B7CBE006D9383 /* SignUpFactory.swift in Sources */,
-				412C79A02D4B7DBC006D9383 /* ModuleFactoryProtocol.swift in Sources */,
 				412C799E2D4B7CBE006D9383 /* SignUpPresenter.swift in Sources */,
 				411FE5182D48EC0A006A5FF9 /* AuthFactory.swift in Sources */,
 				411FE5282D48F658006A5FF9 /* AuthButton.swift in Sources */,
 				411FE5192D48EC0A006A5FF9 /* AuthRouter.swift in Sources */,
 				411FE51A2D48EC0A006A5FF9 /* AuthPresenter.swift in Sources */,
+				412C79AB2D4CFBA4006D9383 /* PINCodeInteractor.swift in Sources */,
+				412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */,
+				412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */,
+				412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */,
+				412C79AF2D4CFBA4006D9383 /* PINCodeCoordinator.swift in Sources */,
+				412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */,
+				412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */,
 				411FE51B2D48EC0A006A5FF9 /* AuthInteractor.swift in Sources */,
+				412C79B52D4D03F1006D9383 /* PinCodeCircles.swift in Sources */,
 				411FE51C2D48EC0A006A5FF9 /* AuthViewController.swift in Sources */,
 				411FE52E2D4A4B7F006A5FF9 /* UDStorageManager.swift in Sources */,
 				411FE51D2D48EC0A006A5FF9 /* AuthCoordinator.swift in Sources */,
 				411FE5302D4A4B92006A5FF9 /* FirebaseAuthManager.swift in Sources */,
 				411FE5262D48F01F006A5FF9 /* LogInPasswordTextField.swift in Sources */,
+				412C79B92D4D29E4006D9383 /* UIImageView+.swift in Sources */,
 				411FE51E2D48EC0A006A5FF9 /* AuthConfigurator.swift in Sources */,
 				4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */,
 				411BD9072D48195E002252CA /* AppDelegate.swift in Sources */,
 				411BD9082D48195E002252CA /* SceneDelegate.swift in Sources */,
+				412C79B72D4D096A006D9383 /* NumbersInputStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

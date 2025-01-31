@@ -16,7 +16,6 @@ protocol AuthDisplayLogic: UIViewController {
 }
 
 class AuthViewController: UIViewController {
-    
     var interactor: AuthBusinessLogic?
     var router: AuthRoutingLogic?
     

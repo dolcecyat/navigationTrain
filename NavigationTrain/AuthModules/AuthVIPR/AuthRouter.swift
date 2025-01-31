@@ -25,7 +25,7 @@ class AuthRouter: NSObject, AuthRoutingLogic {
     }
     
     func openNextScreen() {
-        print("opening next screen")
-
+        guard let vcToOpen = parentCoordinator?.openPinScreen() else {return}
+        viewController?.navigationController?.pushViewController( vcToOpen, animated: true)
     }
 }
