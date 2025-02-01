@@ -16,9 +16,11 @@ class SignUpInteractor: SignUpBusinessLogic, SignUpDelegate {
   
     var presenter: SignUpPresentationLogic?
     let firebase = FirebaseAuthManager.shared
+    init() {
+        firebase.setSignUpDelegate(self)
+    }
       
     func signUpButtonPressed(login: String, password: String) {
-        firebase.setSignUpDelegate(self)
         firebase.signUp(login: login, password: password)
     }
     

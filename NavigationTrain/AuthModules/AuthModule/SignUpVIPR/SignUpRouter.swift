@@ -19,5 +19,6 @@ class SignUpRouter: NSObject, SignUpRoutingLogic {
     
     func showPinScreen() {
         viewController?.navigationController?.popViewController(animated: true)
+//        coordinator?.show()
     }
 }

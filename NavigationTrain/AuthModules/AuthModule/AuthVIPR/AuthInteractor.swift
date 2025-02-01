@@ -14,24 +14,25 @@ protocol AuthBusinessLogic {
 
 class AuthInteractor: AuthBusinessLogic {
     var presenter: AuthPresentationLogic?
+    var userInfo: UserInfo?
+    
     init(){
         FirebaseAuthManager.shared.setLogInDelegate(self)
     }
 
     func logInButtonPressed(login: String ,password: String) {
+        userInfo = UserInfo(password: password, login: login)
         FirebaseAuthManager.shared.logIn(login: login, password: password)
     }
 }
 
 extension AuthInteractor: AuthLogInDelegate {
     func userLoggedIn(success: Bool) {
+        guard let pass = userInfo?.password, let login = userInfo?.login else { return }
+        if success == true {
+            UDStorageManager.shared.saveUserInfo(login: login, password: pass)
+        }
         presenter?.userLoggedIn(success: success)
     }
-    
-    func userWasLogged(success: Bool) {
-        
-    }
-    
-    
 }
 

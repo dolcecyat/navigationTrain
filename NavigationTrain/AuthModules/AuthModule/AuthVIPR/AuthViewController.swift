@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol AuthDisplayLogic: UIViewController {
+protocol AuthDisplayLogic: UIViewController,FirstScreenProtocol {
     var interactor: AuthBusinessLogic? { get set }
     var router: AuthRoutingLogic? { get set }
     func userDidLogged()

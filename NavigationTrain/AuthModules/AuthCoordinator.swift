@@ -27,6 +27,12 @@ class AuthCoordinator {
         let vc = factory.makeSignUp()
         return vc
     }
+    
+    func showLoggedPINScreen()-> LoggedPINDisplayLogic {
+        let factory = LoggedPINFactory(configurator: LoggedPINConfigurator())
+        let vc = factory.makeLoggedPIN()
+        return vc
+    }
 }
 extension AuthCoordinator: AuthCoordinatorProtocol {
     
