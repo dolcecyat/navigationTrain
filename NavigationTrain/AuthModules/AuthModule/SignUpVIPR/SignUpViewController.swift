@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController, SignUpDisplayLogic {
 extension SignUpViewController {
     
     func userDidSignedUp() {
-        router?.showPinScreen()
+        router?.userDidSignedUp()
     }
     
     func signUpFailed() {

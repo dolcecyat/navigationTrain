@@ -8,7 +8,7 @@
 import Foundation
 
 class UDStorageManager {
-    let ud = UserDefaults.standard
+    private let ud = UserDefaults.standard
     static let shared = UDStorageManager()
     
     func saveCode (code:[Int]) {
@@ -26,9 +26,20 @@ class UDStorageManager {
     func checkIfUserLogged() -> Bool {
         ud.bool(forKey: "userLogged")
     }
+    
+    
     func getCurrentUserInfo() -> [String]? {
         guard let password = ud.string(forKey: "password") else { return nil}
         guard let login = ud.string(forKey: "login") else { return nil}
         return [login, password]
+    }
+    
+    func logInUserWithCode(code: [Int])-> Bool {
+        let registedCode: [Int] = ud.array(forKey: "PINCODE")  as? [Int] ?? [Int]()
+        if registedCode == code {
+            return true
+        } else {
+            return false
+        }
     }
 }

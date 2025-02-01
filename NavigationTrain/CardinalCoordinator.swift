@@ -35,15 +35,14 @@ extension CardinalCoordinator: CardinalCoordinatorProtocol {
     
     func start()-> UINavigationController {
         var navCont = UINavigationController()
+        let childCoordinator = AuthCoordinator()
         
         switch startIn {
         case .PIN:
-            let childCoordinator = AuthCoordinator()
             let vcToOpen = childCoordinator.showLoggedPINScreen()
             navCont = UINavigationController(rootViewController: vcToOpen)
             navigationController = navCont
         case .Auth:
-            let childCoordinator = AuthCoordinator()
             let vcToOpen = childCoordinator.showAuthScreen()
             navCont = UINavigationController(rootViewController: vcToOpen)
             navigationController = navCont

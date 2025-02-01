@@ -33,7 +33,6 @@
 		412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */; };
 		412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */; };
 		412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */; };
-		412C79AF2D4CFBA4006D9383 /* PINCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */; };
 		412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */; };
 		412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */; };
 		412C79B52D4D03F1006D9383 /* PinCodeCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B42D4D03F1006D9383 /* PinCodeCircles.swift */; };
@@ -76,7 +75,6 @@
 		412C79962D4B7CBE006D9383 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		412C79972D4B7CBE006D9383 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeConfigurator.swift; sourceTree = "<group>"; };
-		412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeCoordinator.swift; sourceTree = "<group>"; };
 		412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeFactory.swift; sourceTree = "<group>"; };
 		412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeInteractor.swift; sourceTree = "<group>"; };
 		412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodePresenter.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 		412C79B22D4CFBB3006D9383 /* PINCodeVIPR */ = {
 			isa = PBXGroup;
 			children = (
-				412C79A52D4CFBA4006D9383 /* PINCodeCoordinator.swift */,
 				412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */,
 				412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */,
 				412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */,
@@ -452,7 +449,6 @@
 				412C79BB2D4E5234006D9383 /* UserInfo.swift in Sources */,
 				412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */,
 				412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */,
-				412C79AF2D4CFBA4006D9383 /* PINCodeCoordinator.swift in Sources */,
 				412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */,
 				412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */,
 				411FE51B2D48EC0A006A5FF9 /* AuthInteractor.swift in Sources */,

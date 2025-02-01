@@ -10,10 +10,14 @@ import Foundation
 import UIKit
 
 protocol PINCodeRoutingLogic {
+    func openMainScreen()
 
 }
 
 class PINCodeRouter: NSObject, PINCodeRoutingLogic {
 //    var parentCoordinator: AuthCoordinatorProtocol?
     weak var viewController: UIViewController?
+    func openMainScreen() {
+        print("opening Main")
+    }
 }

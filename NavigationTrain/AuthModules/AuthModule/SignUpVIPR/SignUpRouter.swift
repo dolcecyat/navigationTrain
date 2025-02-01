@@ -10,15 +10,14 @@ import Foundation
 import UIKit
 
 protocol SignUpRoutingLogic {
-    func showPinScreen()
+    func userDidSignedUp()
 }
 
 class SignUpRouter: NSObject, SignUpRoutingLogic {
     var coordinator: AuthCoordinatorProtocol?
     weak var viewController: UIViewController?
     
-    func showPinScreen() {
+    func userDidSignedUp() {
         viewController?.navigationController?.popViewController(animated: true)
-//        coordinator?.show()
     }
 }

@@ -8,14 +8,13 @@
 
 import UIKit
 protocol FirstScreenProtocol: UIViewController {
+    
 }
 
 protocol PINCodeDisplayLogic: UIViewController {
     var interactor: PINCodeBusinessLogic? { get set }
     var router: PINCodeRoutingLogic? { get set }
 }
-
-
 
 class PINCodeViewController: UIViewController, PINCodeDisplayLogic {
     var interactor: PINCodeBusinessLogic?
@@ -71,17 +70,29 @@ extension PINCodeViewController {
             } else {
                 repeatCode.append(int)
                 repeatCodeCircleView.paintCircle(index: repeatCode.count - 1)
-                
+                if repeatCode.count == 4 {
+                    saveCode()
+                    router?.openMainScreen()
+                }
             }
         }
     
     func saveCode() {
-        interactor?.saveCodes(code: repeatCode)
+        if enterCode == repeatCode {
+            interactor?.saveCodes(code: repeatCode)
+        } else {
+            showErrorAlert()
+        }
     }
     private func checkMode(_ bool: Bool) {
-//        checkMode = bool
         repeatCodeLabel.isHidden = !bool
         repeatCodeCircleView.isHidden = !bool
+    }
+    
+    func showErrorAlert() {
+        let alert = UIAlertController(title: "Ошибка входа", message: "Код не совпадает", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Изменить", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

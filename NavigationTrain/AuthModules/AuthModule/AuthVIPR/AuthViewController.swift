@@ -31,7 +31,11 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        interactor?.checkIfUserLogged()
+    }
 }
+
 
 // MARK: - Display Logic Functions
 extension AuthViewController: AuthDisplayLogic {
