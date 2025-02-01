@@ -14,26 +14,34 @@ enum StartingDirections {
 }
 
 protocol CardinalCoordinatorProtocol: AnyObject {
-    func start(direction: StartingDirections) -> UINavigationController
+    func start() -> UINavigationController
 }
 
 class CardinalCoordinator {
     static let shared = CardinalCoordinator()
     var navigationController: UINavigationController?
-    
-
-    func lala() {
-        
+    var startIn: StartingDirections {
+        let logged = UDStorageManager.shared.checkIfUserLogged()
+        switch logged {
+        case true:
+            return .PIN
+        case false:
+            return .Auth
+        }
     }
 }
 
 extension CardinalCoordinator: CardinalCoordinatorProtocol {
     
-    func start(direction: StartingDirections)-> UINavigationController {
+    func start()-> UINavigationController {
         var navCont = UINavigationController()
-        switch direction {
+        
+        switch startIn {
         case .PIN:
-            print("1")
+            let childCoordinator = AuthCoordinator()
+            let vcToOpen = childCoordinator.showLoggedPINScreen()
+            navCont = UINavigationController(rootViewController: vcToOpen)
+            navigationController = navCont
         case .Auth:
             let childCoordinator = AuthCoordinator()
             let vcToOpen = childCoordinator.showAuthScreen()

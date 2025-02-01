@@ -19,9 +19,13 @@ class UDStorageManager {
     func saveUserInfo (login: String, password: String) {
         ud.set(login, forKey: "login")
         ud.set(password, forKey: "password")
+        ud.set(true, forKey: "userLogged")
         print("userSaved")
     }
     
+    func checkIfUserLogged() -> Bool {
+        ud.bool(forKey: "userLogged")
+    }
     func getCurrentUserInfo() -> [String]? {
         guard let password = ud.string(forKey: "password") else { return nil}
         guard let login = ud.string(forKey: "login") else { return nil}
