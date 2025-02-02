@@ -11,17 +11,19 @@ import UIKit
 protocol AuthCoordinatorProtocol: AnyObject {
     func openSignUpScreen()-> UIViewController
     func openPinScreen()-> UIViewController
+    func openAuthScreenAfterExit()
 }
 class AuthCoordinator {
-    let  parentCoordinator = CardinalCoordinator.shared
+    static let shared = AuthCoordinator()
+    let parentCoordinator = CardinalCoordinator.shared
     
-    // MARK: AuthScreen opening
+    // MARK:  Methods for cardinalCoordinator
     func showAuthScreen()-> AuthDisplayLogic {
         let factory = AuthFactory(configurator: AuthConfigurator())
         let vc = factory.makeAuth()
         return vc
     }
-    // MARK: signUpScreen opening
+    
     func showSignUpScreen()-> SignUpDisplayLogic {
         let factory = SignUpFactory(configurator: SignUpConfigurator())
         let vc = factory.makeSignUp()
@@ -39,7 +41,10 @@ extension AuthCoordinator: AuthCoordinatorProtocol {
     func openSignUpScreen()-> UIViewController {
         return self.showSignUpScreen()
     }
-    // MARK: PinScreen opnening
+    
+    func openAuthScreenAfterExit() {
+        parentCoordinator.openAuthAfterExit(view: self.showAuthScreen())
+    }
     
     func openPinScreen()-> UIViewController {
         let factory = PINCodeFactory(configurator: PINCodeConfigurator())

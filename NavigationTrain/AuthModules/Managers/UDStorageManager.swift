@@ -15,6 +15,9 @@ class UDStorageManager {
         ud.set(code, forKey: "PINCODE")
         print("pin saved")
     }
+    func userLoggedOut() {
+        ud.set(false, forKey: "userLogged")
+    }
     
     func saveUserInfo (login: String, password: String) {
         ud.set(login, forKey: "login")

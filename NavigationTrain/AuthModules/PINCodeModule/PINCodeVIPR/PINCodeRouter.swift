@@ -15,8 +15,9 @@ protocol PINCodeRoutingLogic {
 }
 
 class PINCodeRouter: NSObject, PINCodeRoutingLogic {
-//    var parentCoordinator: AuthCoordinatorProtocol?
+    var parentCoordinator = AuthCoordinator.shared
     weak var viewController: UIViewController?
+    
     func openMainScreen() {
         print("opening Main")
     }

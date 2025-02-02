@@ -37,7 +37,9 @@ class PINCodeViewController: UIViewController, PINCodeDisplayLogic {
 
 // MARK: - Display Logic Functions
 extension PINCodeViewController {
-  @objc func handleExit() {
+    
+    // MARK: NumbersView methods
+    @objc func handleExit() {
         print("exitvfrom view")
     }
     @objc func handleDelete() {
@@ -67,15 +69,15 @@ extension PINCodeViewController {
     
     func checkCodeHandler(int: Int) {
         if repeatCode.count == 4 {
-            } else {
-                repeatCode.append(int)
-                repeatCodeCircleView.paintCircle(index: repeatCode.count - 1)
-                if repeatCode.count == 4 {
-                    saveCode()
-                    router?.openMainScreen()
-                }
+        } else {
+            repeatCode.append(int)
+            repeatCodeCircleView.paintCircle(index: repeatCode.count - 1)
+            if repeatCode.count == 4 {
+                saveCode()
+                router?.openMainScreen()
             }
         }
+    }
     
     func saveCode() {
         if enterCode == repeatCode {
@@ -110,7 +112,6 @@ extension PINCodeViewController {
         view.addSubview(codeEnterCircleView)
         view.addSubview(repeatCodeLabel)
         view.addSubview(repeatCodeCircleView)
-    
     }
     
     func setConstraints() {

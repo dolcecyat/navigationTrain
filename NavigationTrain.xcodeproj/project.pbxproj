@@ -142,7 +142,6 @@
 				412C79902D4B7C42006D9383 /* AuthModules */,
 				411BD8FD2D48195E002252CA /* App */,
 				411FE5242D48EFDC006A5FF9 /* Resourses */,
-				411FE51F2D48EF12006A5FF9 /* Extentions */,
 				411BD8FF2D48195E002252CA /* Info.plist */,
 				411FE5332D4A4D79006A5FF9 /* GoogleService-Info.plist */,
 				411BD9012D48195E002252CA /* LaunchScreen.storyboard */,
@@ -153,6 +152,7 @@
 		411FE51F2D48EF12006A5FF9 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				412C79B82D4D29E4006D9383 /* UIImageView+.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -160,10 +160,10 @@
 		411FE5242D48EFDC006A5FF9 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-				41D7D2322D4A50AF002F76B9 /* CustomUIKit */,
 				411BD8FE2D48195E002252CA /* Assets.xcassets */,
-				412C79B82D4D29E4006D9383 /* UIImageView+.swift */,
-				412C79BA2D4E5234006D9383 /* UserInfo.swift */,
+				411FE51F2D48EF12006A5FF9 /* Extentions */,
+				41D7D2322D4A50AF002F76B9 /* CustomUIKit */,
+				412C79CE2D4F7948006D9383 /* Models */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -288,6 +288,14 @@
 				412C79C02D4E5533006D9383 /* LoggedPINFactory.swift */,
 			);
 			path = LoggedPINBuildes;
+			sourceTree = "<group>";
+		};
+		412C79CE2D4F7948006D9383 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412C79BA2D4E5234006D9383 /* UserInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {

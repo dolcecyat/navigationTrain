@@ -48,6 +48,7 @@ class FirebaseAuthManager {
         }
     }
     
+    // MARK:  SignUp Method
     func signUp(login: String, password: String) {
         Auth.auth().createUser(withEmail: login, password: password) { [weak self] authResult, error in
             if authResult?.user != nil {
@@ -58,6 +59,7 @@ class FirebaseAuthManager {
         }
     }
     
+    // MARK:  Checking Method
     func checkIfUserLogged(login: String, password: String)  {
         
         Auth.auth().signIn(withEmail: login, password: password) { [weak self] authResult, error in

@@ -20,6 +20,7 @@ protocol CardinalCoordinatorProtocol: AnyObject {
 class CardinalCoordinator {
     static let shared = CardinalCoordinator()
     var navigationController: UINavigationController?
+    
     var startIn: StartingDirections {
         let logged = UDStorageManager.shared.checkIfUserLogged()
         switch logged {
@@ -28,6 +29,13 @@ class CardinalCoordinator {
         case false:
             return .Auth
         }
+    }
+    
+    func openAuthAfterExit(view: UIViewController) {
+        var viewControllers = navigationController?.viewControllers
+        viewControllers?.removeLast()
+        viewControllers?.append(view)
+        navigationController?.setViewControllers(viewControllers!, animated: true)
     }
 }
 

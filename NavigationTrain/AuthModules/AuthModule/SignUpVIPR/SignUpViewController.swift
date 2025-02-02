@@ -58,11 +58,6 @@ extension SignUpViewController {
         logInTextField.resignFirstResponder()
     }
     
-    private func setDelegates() {
-        logInTextField.delegate = self
-        passwordTextField.delegate = self
-    }
-    
     private func addViews() {
         self.view.addSubview(signUpLabel)
         self.view.addSubview(logInTextField)
@@ -97,16 +92,34 @@ extension SignUpViewController {
             
         ])
     }
+    
     private func setUI() {
         view.backgroundColor = .white
         signUpLabel.text = "Sign Up"
         signUpLabel.font = .systemFont(ofSize: 40, weight: .bold)
         signUpLabel.textColor = .black
     }
+    
+    // MARK: Set methods
+    private func setDelegates() {
+        logInTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
     private func setUpActions() {
         signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
     }
     
+    // MARK: SignUpMethod
+    @objc private func signUpButtonPressed() {
+        guard let logIn = logInTextField.text, let password = passwordTextField.text else {
+            self.showErrorAlert(message: "Введите данные")
+            return
+        }
+        interactor?.signUpButtonPressed(login: logIn, password: password)
+    }
+    
+    // MARK: Errors Handler methods
     private func clearTextFields() {
         logInTextField.text = ""
         passwordTextField.text = ""
@@ -116,17 +129,10 @@ extension SignUpViewController {
         let alert = UIAlertController(title: "Ошибка", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Попробовать ещё раз", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    @objc private func signUpButtonPressed() {
-        guard let logIn = logInTextField.text, let password = passwordTextField.text else {
-            self.showErrorAlert(message: "Введите данные")
-            return
-        }
-        interactor?.signUpButtonPressed(login: logIn, password: password)
+        clearTextFields()
     }
 }
-
+// MARK: UITextFieldDelegate
 extension SignUpViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

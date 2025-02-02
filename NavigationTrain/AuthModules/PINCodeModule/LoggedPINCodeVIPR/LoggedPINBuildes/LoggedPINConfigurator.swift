@@ -22,7 +22,7 @@ final class LoggedPINConfigurator: LoggedPINConfiguratorProtocol {
      interactor.presenter = presenter
      vc.interactor = interactor
      vc.router = router
-     
+        
      return vc
     }
 }

@@ -35,6 +35,7 @@ class NumbersInputStack: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    // MARK: SetUI methods
     
     private func buildtLineHStack(array: [Int],stack: UIStackView)-> UIStackView {
         stack.axis = .horizontal
@@ -99,6 +100,7 @@ class NumbersInputStack: UIView {
 
     }
     
+    // MARK: Buttons handlers
     @objc private func numberButtonTapped(sender: UIButton) {
         guard let generalCompletion = generalCompletion else { return }
         generalCompletion(sender.tag)

@@ -13,12 +13,6 @@ protocol PINCodePresentationLogic: AnyObject {
 
 class PINCodePresenter: PINCodePresentationLogic {
     weak var viewController: PINCodeDisplayLogic?
-    
-    func userLogged() {
-        
-    }
-    
-   
 }
 
 

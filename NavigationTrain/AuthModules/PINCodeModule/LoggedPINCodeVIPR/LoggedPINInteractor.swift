@@ -10,6 +10,8 @@ import Foundation
 
 protocol LoggedPINBusinessLogic {
     func userEnteredCode(code: [Int])
+   func exitButtonTapped()
+
 }
 
 class LoggedPINInteractor: LoggedPINBusinessLogic {
@@ -23,5 +25,9 @@ class LoggedPINInteractor: LoggedPINBusinessLogic {
             presenter?.userDidNotLogged()
         }
     }
+    func exitButtonTapped() {
+        UDStorageManager.shared.userLoggedOut()
+    }
+    
 }
 

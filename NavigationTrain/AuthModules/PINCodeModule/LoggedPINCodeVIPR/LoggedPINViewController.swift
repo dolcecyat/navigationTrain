@@ -32,7 +32,11 @@ class LoggedPINViewController: UIViewController, LoggedPINDisplayLogic {
 
 // MARK: - Display Logic Functions
 extension LoggedPINViewController {
+    
+    // MARK: NumbersView handlers
     @objc func handleExit() {
+        interactor?.exitButtonTapped()
+        router?.exitButtonTapped()
         print("exit from view")
     }
     @objc func handleDelete() {
@@ -63,6 +67,7 @@ extension LoggedPINViewController {
         router?.openMainScreen()
     }
     
+    // MARK:  Error handlers
     func showErrorAlert() {
         let alert = UIAlertController(title: "Ошибка входа", message: "Неправильный код доступа", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Изменить", style: UIAlertAction.Style.default, handler: nil))
@@ -82,7 +87,6 @@ extension LoggedPINViewController {
         view.addSubview(numbersView)
         view.addSubview(enterCodeLabel)
         view.addSubview(codeEnterCircleView)
-    
     }
     
     func setConstraints() {

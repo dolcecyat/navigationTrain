@@ -11,13 +11,20 @@ import UIKit
 
 protocol LoggedPINRoutingLogic {
    func openMainScreen()
+    func exitButtonTapped()
+
 }
 
 class LoggedPINRouter: NSObject, LoggedPINRoutingLogic {
-        var coordinator: AuthCoordinatorProtocol?
+    let coordinator = AuthCoordinator.shared
         weak var viewController: UIViewController?
     
     func openMainScreen() {
         print("открываю главный экран")
     }
+    
+    func exitButtonTapped() {
+        coordinator.openAuthScreenAfterExit()
+    }
+
 }

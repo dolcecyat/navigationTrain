@@ -22,9 +22,7 @@ final class AuthConfigurator: AuthConfiguratorProtocol {
         interactor.presenter = presenter
         vc.interactor = interactor
         vc.router = router
-        router.viewController = vc
-        router.parentCoordinator = AuthCoordinator()
-        
+        router.viewController = vc        
         return vc
     }
 }

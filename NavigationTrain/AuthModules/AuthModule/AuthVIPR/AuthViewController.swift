@@ -129,7 +129,6 @@ extension AuthViewController {
 }
 
 // MARK: Interactor interactions
-
 extension AuthViewController {
     
     @objc private func logInButtonPressed() {

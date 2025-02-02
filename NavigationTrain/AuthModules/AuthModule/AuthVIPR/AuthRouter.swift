@@ -15,17 +15,17 @@ protocol AuthRoutingLogic {
 }
 
 class AuthRouter: NSObject, AuthRoutingLogic {
-    var parentCoordinator: AuthCoordinatorProtocol?
+    var parentCoordinator = AuthCoordinator.shared
     weak var viewController: UIViewController?
-
+    
     
     func signUpButtonPressed() {
-        guard let vcToOpen = parentCoordinator?.openSignUpScreen() else {return}
+        let vcToOpen = parentCoordinator.openSignUpScreen()
         viewController?.navigationController?.pushViewController( vcToOpen, animated: true)
     }
     
     func openNextScreen() {
-        guard let vcToOpen = parentCoordinator?.openPinScreen() else {return}
+        let vcToOpen = parentCoordinator.openPinScreen()
         viewController?.navigationController?.pushViewController( vcToOpen, animated: true)
     }
 }
