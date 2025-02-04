@@ -11,9 +11,15 @@ import UIKit
 
 protocol MainRoutingLogic {
     var viewController: MainDisplayLogic? { get set }
+    func getTabScreens()-> [TabScreens : UIViewController]
 
 }
 
 class MainRouter: NSObject, MainRoutingLogic {
-    var viewController: MainDisplayLogic?
+    let coordinator = MainCoordinator.shared
+    weak var viewController: MainDisplayLogic?
+
+    func getTabScreens()-> [TabScreens : UIViewController] {
+       return coordinator.getAllTabViews()
+    }
 }

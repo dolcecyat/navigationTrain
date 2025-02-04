@@ -7,48 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F35E5C86-DE78-447E-92FA-565ED435015A"
+            uuid = "E330E06E-265C-4F65-AA08-0882E4F6514C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NavigationTrain/AuthModules/PINCodeModule/PINCodeVIPR/PINCodeViewController.swift"
+            filePath = "NavigationTrain/MainModule/MainScreen/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "PINCodeViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C14BD70F-9F7D-4C1B-BD14-5071521F738F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NavigationTrain/AuthModules/PINCodeModule/LoggedPINCodeVIPR/LoggedPINViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "handleExit()"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "setTabBar()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6CC96821-6C13-4C3D-BB88-CC34357129A7"
+            uuid = "BEB7FC29-0C98-4DC8-8535-14E9801F2A24"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NavigationTrain/AuthModules/PINCodeModule/LoggedPINCodeVIPR/LoggedPINRouter.swift"
+            filePath = "NavigationTrain/MainModule/MainScreen/MainScreenBuilders/MainConfigurator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "exitButtonTapped()"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "configure(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82B53389-8879-47EF-AF35-831CBEB645B8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationTrain/MainModule/MainScreen/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "setTabBar()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

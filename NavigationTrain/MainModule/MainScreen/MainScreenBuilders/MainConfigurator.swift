@@ -22,7 +22,7 @@ final class MainConfigurator: MainConfiguratorProtocol {
      interactor.presenter = presenter
      vc.interactor = interactor
      vc.router = router
-     
+     router.viewController = vc
      return vc
     }
 }

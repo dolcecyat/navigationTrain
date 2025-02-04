@@ -44,7 +44,7 @@ class CardinalCoordinator {
         let childCoordinator = MainCoordinator()
         var viewControllers = navigationController?.viewControllers
         viewControllers = []
-        let vcToOpen = childCoordinator.showMainScreen()
+        let vcToOpen = childCoordinator.openMainScreen()
         viewControllers?.append(vcToOpen)
         navigationController?.setViewControllers(viewControllers!, animated: true)
     }
