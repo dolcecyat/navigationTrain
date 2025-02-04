@@ -15,7 +15,7 @@ protocol AuthCoordinatorProtocol: AnyObject {
 }
 class AuthCoordinator {
     static let shared = AuthCoordinator()
-    let parentCoordinator = CardinalCoordinator.shared
+    private let parentCoordinator = CardinalCoordinator.shared
     
     // MARK:  Methods for cardinalCoordinator
     func showAuthScreen()-> AuthDisplayLogic {
@@ -44,6 +44,10 @@ extension AuthCoordinator: AuthCoordinatorProtocol {
     
     func openAuthScreenAfterExit() {
         parentCoordinator.openAuthAfterExit(view: self.showAuthScreen())
+    }
+    
+    func authCompleted() {
+        parentCoordinator.openMainAfterAuth()
     }
     
     func openPinScreen()-> UIViewController {

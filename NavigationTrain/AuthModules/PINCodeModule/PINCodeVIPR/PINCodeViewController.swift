@@ -74,7 +74,6 @@ extension PINCodeViewController {
             repeatCodeCircleView.paintCircle(index: repeatCode.count - 1)
             if repeatCode.count == 4 {
                 saveCode()
-                router?.openMainScreen()
             }
         }
     }
@@ -82,6 +81,7 @@ extension PINCodeViewController {
     func saveCode() {
         if enterCode == repeatCode {
             interactor?.saveCodes(code: repeatCode)
+            router?.openMainScreen()
         } else {
             showErrorAlert()
         }

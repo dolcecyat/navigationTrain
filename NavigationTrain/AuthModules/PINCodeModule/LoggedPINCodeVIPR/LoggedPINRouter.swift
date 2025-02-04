@@ -20,7 +20,7 @@ class LoggedPINRouter: NSObject, LoggedPINRoutingLogic {
         weak var viewController: UIViewController?
     
     func openMainScreen() {
-        print("открываю главный экран")
+        coordinator.authCompleted()
     }
     
     func exitButtonTapped() {

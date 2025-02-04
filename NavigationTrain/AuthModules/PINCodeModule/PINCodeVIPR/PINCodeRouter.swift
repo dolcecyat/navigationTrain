@@ -19,6 +19,6 @@ class PINCodeRouter: NSObject, PINCodeRoutingLogic {
     weak var viewController: UIViewController?
     
     func openMainScreen() {
-        print("opening Main")
+        parentCoordinator.authCompleted()
     }
 }

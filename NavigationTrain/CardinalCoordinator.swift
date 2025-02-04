@@ -37,6 +37,15 @@ class CardinalCoordinator {
         viewControllers?.append(view)
         navigationController?.setViewControllers(viewControllers!, animated: true)
     }
+    
+    func openMainAfterAuth() {
+        let childCoordinator = MainCoordinator()
+        var viewControllers = navigationController?.viewControllers
+        viewControllers?.removeLast()
+        let vcToOpen = childCoordinator.showMainScreen()
+        viewControllers?.append(vcToOpen)
+        navigationController?.setViewControllers(viewControllers!, animated: true)
+    }
 }
 
 extension CardinalCoordinator: CardinalCoordinatorProtocol {
