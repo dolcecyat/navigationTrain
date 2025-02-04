@@ -11,6 +11,7 @@ import UIKit
 
 protocol PINCodeRoutingLogic {
     func openMainScreen()
+    func exitButtonTapped()
 
 }
 
@@ -20,5 +21,8 @@ class PINCodeRouter: NSObject, PINCodeRoutingLogic {
     
     func openMainScreen() {
         parentCoordinator.authCompleted()
+    }
+    func exitButtonTapped() {
+        parentCoordinator.openAuthScreenAfterExit()
     }
 }

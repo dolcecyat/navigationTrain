@@ -13,7 +13,7 @@ protocol MainDisplayLogic: UIViewController {
     var router: MainRoutingLogic? { get set }
 }
 
-class MainViewController: UIViewController, MainDisplayLogic {
+class MainViewController: UITabBarController, MainDisplayLogic {
     var interactor: MainBusinessLogic?
     var router: MainRoutingLogic?
     

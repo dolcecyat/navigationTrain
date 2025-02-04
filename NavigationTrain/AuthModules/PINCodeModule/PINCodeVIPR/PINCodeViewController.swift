@@ -40,7 +40,9 @@ extension PINCodeViewController {
     
     // MARK: NumbersView methods
     @objc func handleExit() {
-        print("exitvfrom view")
+        interactor?.exitButtonTapped()
+        router?.exitButtonTapped()
+        print("exit from view")
     }
     @objc func handleDelete() {
         if enterCode.isEmpty {

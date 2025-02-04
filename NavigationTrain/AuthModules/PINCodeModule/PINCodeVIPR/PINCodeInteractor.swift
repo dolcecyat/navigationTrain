@@ -10,6 +10,7 @@ import Foundation
 
 protocol PINCodeBusinessLogic {
     func saveCodes(code: [Int])
+    func exitButtonTapped()
 }
 
 class PINCodeInteractor: PINCodeBusinessLogic {
@@ -19,6 +20,9 @@ class PINCodeInteractor: PINCodeBusinessLogic {
     
     func saveCodes(code: [Int]) {
         UDStorageManager.shared.saveCode(code: code)
+    }
+    func exitButtonTapped() {
+        UDStorageManager.shared.userLoggedOut()
     }
 }
 

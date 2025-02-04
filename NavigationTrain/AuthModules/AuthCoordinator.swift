@@ -43,7 +43,7 @@ extension AuthCoordinator: AuthCoordinatorProtocol {
     }
     
     func openAuthScreenAfterExit() {
-        parentCoordinator.openAuthAfterExit(view: self.showAuthScreen())
+        parentCoordinator.openAuthAfterExit()
     }
     
     func authCompleted() {

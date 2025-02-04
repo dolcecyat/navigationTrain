@@ -36,7 +36,8 @@ extension MainCoordinator: MainCoordinatorProtocol {
         let vc = factory.makeMain()
         return vc
     }
+    
     func openAuthScreenAfterExit() {
-        parentCoordinator.openAuthAfterExit(view: <#T##UIViewController#>)
+        parentCoordinator.openAuthAfterExit()
     }
 }

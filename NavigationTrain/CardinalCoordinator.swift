@@ -31,17 +31,19 @@ class CardinalCoordinator {
         }
     }
     
-    func openAuthAfterExit(view: UIViewController) {
+    func openAuthAfterExit() {
         var viewControllers = navigationController?.viewControllers
         viewControllers?.removeLast()
-        viewControllers?.append(view)
+        let childCoordinator = AuthCoordinator()
+        let vcToopen = childCoordinator.showAuthScreen()
+        viewControllers?.append(vcToopen)
         navigationController?.setViewControllers(viewControllers!, animated: true)
     }
     
     func openMainAfterAuth() {
         let childCoordinator = MainCoordinator()
         var viewControllers = navigationController?.viewControllers
-        viewControllers?.removeLast()
+        viewControllers = []
         let vcToOpen = childCoordinator.showMainScreen()
         viewControllers?.append(vcToOpen)
         navigationController?.setViewControllers(viewControllers!, animated: true)

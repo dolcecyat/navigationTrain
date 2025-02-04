@@ -9,7 +9,7 @@
 import Foundation
 
 protocol MainBusinessLogic {
-    var presenter: MainPresentationLogic? { get <#set#> }
+    var presenter: MainPresentationLogic? { get set }
 
 }
 

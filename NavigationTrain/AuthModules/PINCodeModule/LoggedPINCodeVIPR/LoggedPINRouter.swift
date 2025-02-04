@@ -11,7 +11,7 @@ import UIKit
 
 protocol LoggedPINRoutingLogic {
    func openMainScreen()
-    func exitButtonTapped()
+   func exitButtonTapped()
 
 }
 
