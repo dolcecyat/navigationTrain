@@ -25,12 +25,12 @@ class MainCoordinator: MainCoordinatorProtocol {
     
     static let shared = MainCoordinator()
     private let parentCoordinator = CardinalCoordinator.shared
+    private let factory: MainFactoryProtocol = MainFactory()
 
     
     func openMainScreen() -> UIViewController {
-        let factory = MainFactory(configurator: MainConfigurator())
-        let vc = factory.makeMain()
-        return vc
+        return factory.createMainScreen()
+    
     }
     
     func openAuthScreenAfterExit() {
@@ -47,25 +47,17 @@ class MainCoordinator: MainCoordinatorProtocol {
         return [.home: homeScreen,.bathroom: bathroomScreen,.furniture: furnitureScreen,.flowers: flowersScreen]
     }
     private func makeHomeScreen() -> TabBarViewProtocol {
-        let childFactory = HomeFactory(configurator: HomeConfigurator())
-        let vc = childFactory.makeHome()
-        return vc as! TabBarViewProtocol
+        factory.createHomeScreen() as! TabBarViewProtocol
     }
     
     private func makeBathroomScreen() -> TabBarViewProtocol {
-        let childFactory = BathroomFactory(configurator: BathroomConfigurator())
-        let vc = childFactory.makeBathroom()
-        return vc as! TabBarViewProtocol
+        factory.createBathroomScreen() as! TabBarViewProtocol
     }
     private func makeFurnitureScreen() -> TabBarViewProtocol {
-        let childFactory = FurnitureFactory(configurator: FurnitureConfigurator())
-        let vc = childFactory.makeFurniture()
-        return vc as! TabBarViewProtocol
+        factory.createFurnitureScreen() as! TabBarViewProtocol
     }
     private func makeFlowersScreen() -> TabBarViewProtocol {
-        let childFactory = FlowersFactory(configurator: FlowersConfigurator())
-        let vc = childFactory.makeFlowers()
-        return vc as! TabBarViewProtocol
+        factory.createFlowersScreen() as! TabBarViewProtocol
     }
 }
 

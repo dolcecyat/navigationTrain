@@ -34,8 +34,10 @@ class CardinalCoordinator {
     func openAuthAfterExit() {
         var viewControllers = navigationController?.viewControllers
         viewControllers?.removeLast()
+        
         let childCoordinator = AuthCoordinator()
         let vcToopen = childCoordinator.showAuthScreen()
+        
         viewControllers?.append(vcToopen)
         navigationController?.setViewControllers(viewControllers!, animated: true)
     }
