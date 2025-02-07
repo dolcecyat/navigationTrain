@@ -16,24 +16,19 @@ protocol AuthCoordinatorProtocol: AnyObject {
 class AuthCoordinator {
     static let shared = AuthCoordinator()
     private let parentCoordinator = CardinalCoordinator.shared
+    private let factory: AuthFactoryProtocol = AuthFactory()
     
     // MARK:  Methods for cardinalCoordinator
     func showAuthScreen()-> AuthDisplayLogic {
-        let factory = AuthFactory(configurator: AuthConfigurator())
-        let vc = factory.makeAuth()
-        return vc
+       return factory.createAuthScreen()
     }
     
     func showSignUpScreen()-> SignUpDisplayLogic {
-        let factory = SignUpFactory(configurator: SignUpConfigurator())
-        let vc = factory.makeSignUp()
-        return vc
+       return factory.createSignUpScreen()
     }
     
     func showLoggedPINScreen()-> LoggedPINDisplayLogic {
-        let factory = LoggedPINFactory(configurator: LoggedPINConfigurator())
-        let vc = factory.makeLoggedPIN()
-        return vc
+       return factory.createLoggedPINScreen()
     }
 }
 extension AuthCoordinator: AuthCoordinatorProtocol {
@@ -51,8 +46,6 @@ extension AuthCoordinator: AuthCoordinatorProtocol {
     }
     
     func openPinScreen()-> UIViewController {
-        let factory = PINCodeFactory(configurator: PINCodeConfigurator())
-        let vc = factory.makePINCode()
-        return vc
+        return factory.createPINCodeScreen()
     }
 }

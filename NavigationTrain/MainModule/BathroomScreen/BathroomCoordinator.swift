@@ -13,7 +13,7 @@ protocol BathroomCoordinatorProtocol: AnyObject {
 }
 
 class BathroomCoordinator {
-    private let parentCoordinator = CardinalCoordinator.shared
+    private let parentCoordinator = MainCoordinator.shared
     let factory = BathroomFactory(configurator: BathroomConfigurator())
 
 }

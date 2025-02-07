@@ -13,7 +13,7 @@ protocol HomeCoordinatorProtocol: AnyObject {
 }
 
 class HomeCoordinator {
-    private let parentCoordinator = CardinalCoordinator.shared
+    private let parentCoordinator = MainCoordinator.shared
     let factory = HomeFactory(configurator: HomeConfigurator())
 
 }

@@ -13,7 +13,7 @@ protocol FurnitureCoordinatorProtocol: AnyObject {
 }
 
 class FurnitureCoordinator {
-    private let parentCoordinator = CardinalCoordinator.shared
+    private let parentCoordinator = MainCoordinator.shared
     let factory = FurnitureFactory(configurator: FurnitureConfigurator())
 
 }

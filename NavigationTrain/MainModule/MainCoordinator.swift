@@ -18,10 +18,11 @@ import UIKit
 protocol MainCoordinatorProtocol: AnyObject {
     func openMainScreen()-> UIViewController
     func openAuthScreenAfterExit()
-    func getAllTabViews() -> [TabScreens: UIViewController]
+    func getAllTabViews() -> [TabScreens: UINavigationController]
 }
 
 class MainCoordinator: MainCoordinatorProtocol {
+    
     static let shared = MainCoordinator()
     private let parentCoordinator = CardinalCoordinator.shared
 
@@ -38,11 +39,11 @@ class MainCoordinator: MainCoordinatorProtocol {
     
     // MARK: Making TabViewScreens
     
-    func getAllTabViews() -> [TabScreens : UIViewController] {
-         let homeScreen = makeHomeScreen()
-         let bathroomScreen = makeBathroomScreen()
-         let furnitureScreen = makeFurnitureScreen()
-         let flowersScreen = makeFlowersScreen()
+    func getAllTabViews() -> [TabScreens : UINavigationController] {
+        let homeScreen =  UINavigationController(rootViewController:makeHomeScreen())
+        let bathroomScreen = UINavigationController(rootViewController: makeBathroomScreen())
+        let furnitureScreen =  UINavigationController(rootViewController: makeFurnitureScreen())
+        let flowersScreen =  UINavigationController(rootViewController: makeFlowersScreen())
         return [.home: homeScreen,.bathroom: bathroomScreen,.furniture: furnitureScreen,.flowers: flowersScreen]
     }
     private func makeHomeScreen() -> TabBarViewProtocol {

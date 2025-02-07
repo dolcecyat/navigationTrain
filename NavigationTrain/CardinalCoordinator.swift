@@ -42,11 +42,14 @@ class CardinalCoordinator {
     
     func openMainAfterAuth() {
         let childCoordinator = MainCoordinator()
-        var viewControllers = navigationController?.viewControllers
-        viewControllers = []
         let vcToOpen = childCoordinator.openMainScreen()
-        viewControllers?.append(vcToOpen)
-        navigationController?.setViewControllers(viewControllers!, animated: true)
+        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate,
+           let window = sceneDelegate.window {
+            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                window.rootViewController = vcToOpen
+                window.makeKeyAndVisible()
+            }, completion: nil)
+        }
     }
 }
 

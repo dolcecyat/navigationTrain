@@ -11,13 +11,11 @@
 		411BD9062D48195E002252CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411BD9012D48195E002252CA /* LaunchScreen.storyboard */; };
 		411BD9072D48195E002252CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BD8FB2D48195E002252CA /* AppDelegate.swift */; };
 		411BD9082D48195E002252CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411BD8FC2D48195E002252CA /* SceneDelegate.swift */; };
-		411FE5182D48EC0A006A5FF9 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5132D48EC0A006A5FF9 /* AuthFactory.swift */; };
 		411FE5192D48EC0A006A5FF9 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5162D48EC0A006A5FF9 /* AuthRouter.swift */; };
 		411FE51A2D48EC0A006A5FF9 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5152D48EC0A006A5FF9 /* AuthPresenter.swift */; };
 		411FE51B2D48EC0A006A5FF9 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5142D48EC0A006A5FF9 /* AuthInteractor.swift */; };
 		411FE51C2D48EC0A006A5FF9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5172D48EC0A006A5FF9 /* AuthViewController.swift */; };
 		411FE51D2D48EC0A006A5FF9 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5122D48EC0A006A5FF9 /* AuthCoordinator.swift */; };
-		411FE51E2D48EC0A006A5FF9 /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5112D48EC0A006A5FF9 /* AuthConfigurator.swift */; };
 		411FE5262D48F01F006A5FF9 /* LogInPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5252D48F01F006A5FF9 /* LogInPasswordTextField.swift */; };
 		411FE5282D48F658006A5FF9 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE5272D48F658006A5FF9 /* AuthButton.swift */; };
 		411FE52E2D4A4B7F006A5FF9 /* UDStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FE52D2D4A4B7F006A5FF9 /* UDStorageManager.swift */; };
@@ -26,25 +24,19 @@
 		412C79982D4B7CBE006D9383 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79962D4B7CBE006D9383 /* SignUpRouter.swift */; };
 		412C79992D4B7CBE006D9383 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79942D4B7CBE006D9383 /* SignUpInteractor.swift */; };
 		412C799A2D4B7CBE006D9383 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79972D4B7CBE006D9383 /* SignUpViewController.swift */; };
-		412C799B2D4B7CBE006D9383 /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79912D4B7CBE006D9383 /* SignUpConfigurator.swift */; };
-		412C799D2D4B7CBE006D9383 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79932D4B7CBE006D9383 /* SignUpFactory.swift */; };
 		412C799E2D4B7CBE006D9383 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79952D4B7CBE006D9383 /* SignUpPresenter.swift */; };
 		412C79AB2D4CFBA4006D9383 /* PINCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */; };
 		412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */; };
 		412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */; };
 		412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */; };
-		412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */; };
-		412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */; };
 		412C79B52D4D03F1006D9383 /* PinCodeCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B42D4D03F1006D9383 /* PinCodeCircles.swift */; };
 		412C79B72D4D096A006D9383 /* NumbersInputStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B62D4D096A006D9383 /* NumbersInputStack.swift */; };
 		412C79B92D4D29E4006D9383 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79B82D4D29E4006D9383 /* UIImageView+.swift */; };
 		412C79BB2D4E5234006D9383 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79BA2D4E5234006D9383 /* UserInfo.swift */; };
 		412C79C52D4E5533006D9383 /* LoggedPINRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79C32D4E5533006D9383 /* LoggedPINRouter.swift */; };
 		412C79C62D4E5533006D9383 /* LoggedPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79C42D4E5533006D9383 /* LoggedPINViewController.swift */; };
-		412C79C72D4E5533006D9383 /* LoggedPINFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79C02D4E5533006D9383 /* LoggedPINFactory.swift */; };
 		412C79C92D4E5533006D9383 /* LoggedPINInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79C12D4E5533006D9383 /* LoggedPINInteractor.swift */; };
 		412C79CA2D4E5533006D9383 /* LoggedPINPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79C22D4E5533006D9383 /* LoggedPINPresenter.swift */; };
-		412C79CB2D4E5533006D9383 /* LoggedPINConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79BE2D4E5533006D9383 /* LoggedPINConfigurator.swift */; };
 		412C79D72D50D4CF006D9383 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79D42D50D4CF006D9383 /* MainPresenter.swift */; };
 		412C79D82D50D4CF006D9383 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79D32D50D4CF006D9383 /* MainInteractor.swift */; };
 		412C79D92D50D4CF006D9383 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C79D52D50D4CF006D9383 /* MainRouter.swift */; };
@@ -80,6 +72,7 @@
 		412C7A202D529877006D9383 /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A1B2D529877006D9383 /* BathroomViewController.swift */; };
 		412C7A212D529877006D9383 /* BathroomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A192D529877006D9383 /* BathroomPresenter.swift */; };
 		412C7A222D529877006D9383 /* BathroomConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A152D529877006D9383 /* BathroomConfigurator.swift */; };
+		412C7A252D55FA68006D9383 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A242D55FA68006D9383 /* AuthFactory.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		43D7B17FE7BBA26994F32788 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -92,9 +85,7 @@
 		411BD8FE2D48195E002252CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411BD8FF2D48195E002252CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411BD9002D48195E002252CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		411FE5112D48EC0A006A5FF9 /* AuthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
 		411FE5122D48EC0A006A5FF9 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		411FE5132D48EC0A006A5FF9 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
 		411FE5142D48EC0A006A5FF9 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		411FE5152D48EC0A006A5FF9 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		411FE5162D48EC0A006A5FF9 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
@@ -104,14 +95,10 @@
 		411FE52D2D4A4B7F006A5FF9 /* UDStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDStorageManager.swift; sourceTree = "<group>"; };
 		411FE52F2D4A4B92006A5FF9 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		411FE5332D4A4D79006A5FF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		412C79912D4B7CBE006D9383 /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
-		412C79932D4B7CBE006D9383 /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
 		412C79942D4B7CBE006D9383 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		412C79952D4B7CBE006D9383 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		412C79962D4B7CBE006D9383 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 		412C79972D4B7CBE006D9383 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeConfigurator.swift; sourceTree = "<group>"; };
-		412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeFactory.swift; sourceTree = "<group>"; };
 		412C79A72D4CFBA4006D9383 /* PINCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeInteractor.swift; sourceTree = "<group>"; };
 		412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodePresenter.swift; sourceTree = "<group>"; };
 		412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeRouter.swift; sourceTree = "<group>"; };
@@ -120,8 +107,6 @@
 		412C79B62D4D096A006D9383 /* NumbersInputStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersInputStack.swift; sourceTree = "<group>"; };
 		412C79B82D4D29E4006D9383 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		412C79BA2D4E5234006D9383 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		412C79BE2D4E5533006D9383 /* LoggedPINConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedPINConfigurator.swift; sourceTree = "<group>"; };
-		412C79C02D4E5533006D9383 /* LoggedPINFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedPINFactory.swift; sourceTree = "<group>"; };
 		412C79C12D4E5533006D9383 /* LoggedPINInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedPINInteractor.swift; sourceTree = "<group>"; };
 		412C79C22D4E5533006D9383 /* LoggedPINPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedPINPresenter.swift; sourceTree = "<group>"; };
 		412C79C32D4E5533006D9383 /* LoggedPINRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedPINRouter.swift; sourceTree = "<group>"; };
@@ -161,6 +146,7 @@
 		412C7A192D529877006D9383 /* BathroomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomPresenter.swift; sourceTree = "<group>"; };
 		412C7A1A2D529877006D9383 /* BathroomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomRouter.swift; sourceTree = "<group>"; };
 		412C7A1B2D529877006D9383 /* BathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
+		412C7A242D55FA68006D9383 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59C274DB6DDC9517C21AF1 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,8 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */,
-				412C79CF2D50D4B5006D9383 /* MainModule */,
 				412C79902D4B7C42006D9383 /* AuthModules */,
+				412C79CF2D50D4B5006D9383 /* MainModule */,
 				411BD8FD2D48195E002252CA /* App */,
 				411FE5242D48EFDC006A5FF9 /* Resourses */,
 				411BD8FF2D48195E002252CA /* Info.plist */,
@@ -255,18 +241,8 @@
 				411FE5152D48EC0A006A5FF9 /* AuthPresenter.swift */,
 				411FE5162D48EC0A006A5FF9 /* AuthRouter.swift */,
 				411FE5172D48EC0A006A5FF9 /* AuthViewController.swift */,
-				411FE52B2D4A4B4D006A5FF9 /* AuthBuilders */,
 			);
 			path = AuthVIPR;
-			sourceTree = "<group>";
-		};
-		411FE52B2D4A4B4D006A5FF9 /* AuthBuilders */ = {
-			isa = PBXGroup;
-			children = (
-				411FE5112D48EC0A006A5FF9 /* AuthConfigurator.swift */,
-				411FE5132D48EC0A006A5FF9 /* AuthFactory.swift */,
-			);
-			path = AuthBuilders;
 			sourceTree = "<group>";
 		};
 		411FE52C2D4A4B63006A5FF9 /* Managers */ = {
@@ -282,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				411FE5122D48EC0A006A5FF9 /* AuthCoordinator.swift */,
+				412C7A242D55FA68006D9383 /* AuthFactory.swift */,
 				412C79BC2D4E54EF006D9383 /* AuthModule */,
 				412C79BD2D4E5503006D9383 /* PINCodeModule */,
 				411FE52C2D4A4B63006A5FF9 /* Managers */,
@@ -296,18 +273,8 @@
 				412C79952D4B7CBE006D9383 /* SignUpPresenter.swift */,
 				412C79962D4B7CBE006D9383 /* SignUpRouter.swift */,
 				412C79972D4B7CBE006D9383 /* SignUpViewController.swift */,
-				412C79A22D4B8099006D9383 /* SighUPBuilders */,
 			);
 			path = SignUpVIPR;
-			sourceTree = "<group>";
-		};
-		412C79A22D4B8099006D9383 /* SighUPBuilders */ = {
-			isa = PBXGroup;
-			children = (
-				412C79912D4B7CBE006D9383 /* SignUpConfigurator.swift */,
-				412C79932D4B7CBE006D9383 /* SignUpFactory.swift */,
-			);
-			path = SighUPBuilders;
 			sourceTree = "<group>";
 		};
 		412C79B22D4CFBB3006D9383 /* PINCodeVIPR */ = {
@@ -317,18 +284,8 @@
 				412C79A82D4CFBA4006D9383 /* PINCodePresenter.swift */,
 				412C79A92D4CFBA4006D9383 /* PINCodeRouter.swift */,
 				412C79AA2D4CFBA4006D9383 /* PINCodeViewController.swift */,
-				412C79B32D4CFBD2006D9383 /* PINCodeBuilders */,
 			);
 			path = PINCodeVIPR;
-			sourceTree = "<group>";
-		};
-		412C79B32D4CFBD2006D9383 /* PINCodeBuilders */ = {
-			isa = PBXGroup;
-			children = (
-				412C79A42D4CFBA4006D9383 /* PINCodeConfigurator.swift */,
-				412C79A62D4CFBA4006D9383 /* PINCodeFactory.swift */,
-			);
-			path = PINCodeBuilders;
 			sourceTree = "<group>";
 		};
 		412C79BC2D4E54EF006D9383 /* AuthModule */ = {
@@ -356,18 +313,8 @@
 				412C79C22D4E5533006D9383 /* LoggedPINPresenter.swift */,
 				412C79C32D4E5533006D9383 /* LoggedPINRouter.swift */,
 				412C79C42D4E5533006D9383 /* LoggedPINViewController.swift */,
-				412C79CD2D4E557B006D9383 /* LoggedPINBuildes */,
 			);
 			path = LoggedPINCodeVIPR;
-			sourceTree = "<group>";
-		};
-		412C79CD2D4E557B006D9383 /* LoggedPINBuildes */ = {
-			isa = PBXGroup;
-			children = (
-				412C79BE2D4E5533006D9383 /* LoggedPINConfigurator.swift */,
-				412C79C02D4E5533006D9383 /* LoggedPINFactory.swift */,
-			);
-			path = LoggedPINBuildes;
 			sourceTree = "<group>";
 		};
 		412C79CE2D4F7948006D9383 /* Models */ = {
@@ -383,9 +330,9 @@
 			children = (
 				412C79D12D50D4CF006D9383 /* MainCoordinator.swift */,
 				412C79DE2D50EA3F006D9383 /* MainScreen */,
+				412C79F22D529406006D9383 /* FlowersScreen */,
 				412C7A142D5296A9006D9383 /* BathroomScreen */,
 				412C7A042D5294BF006D9383 /* FurnitureScreen */,
-				412C79F22D529406006D9383 /* FlowersScreen */,
 				412C79E02D528E6E006D9383 /* HomeScreen */,
 			);
 			path = MainModule;
@@ -415,12 +362,12 @@
 		412C79E02D528E6E006D9383 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				412C79F12D529251006D9383 /* HomeBuilders */,
 				412C79E42D529246006D9383 /* HomeCoordinator.swift */,
 				412C79E62D529246006D9383 /* HomeInteractor.swift */,
 				412C79E72D529246006D9383 /* HomePresenter.swift */,
 				412C79E82D529246006D9383 /* HomeRouter.swift */,
 				412C79E92D529246006D9383 /* HomeViewController.swift */,
+				412C79F12D529251006D9383 /* HomeBuilders */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -653,10 +600,7 @@
 				412C79FE2D52942B006D9383 /* FlowersFactory.swift in Sources */,
 				412C79FF2D52942B006D9383 /* FlowersCoordinator.swift in Sources */,
 				412C7A002D52942B006D9383 /* FlowersRouter.swift in Sources */,
-				412C799B2D4B7CBE006D9383 /* SignUpConfigurator.swift in Sources */,
-				412C799D2D4B7CBE006D9383 /* SignUpFactory.swift in Sources */,
 				412C799E2D4B7CBE006D9383 /* SignUpPresenter.swift in Sources */,
-				411FE5182D48EC0A006A5FF9 /* AuthFactory.swift in Sources */,
 				411FE5282D48F658006A5FF9 /* AuthButton.swift in Sources */,
 				411FE5192D48EC0A006A5FF9 /* AuthRouter.swift in Sources */,
 				411FE51A2D48EC0A006A5FF9 /* AuthPresenter.swift in Sources */,
@@ -672,8 +616,7 @@
 				412C79BB2D4E5234006D9383 /* UserInfo.swift in Sources */,
 				412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */,
 				412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */,
-				412C79B02D4CFBA4006D9383 /* PINCodeConfigurator.swift in Sources */,
-				412C79B12D4CFBA4006D9383 /* PINCodeFactory.swift in Sources */,
+				412C7A252D55FA68006D9383 /* AuthFactory.swift in Sources */,
 				411FE51B2D48EC0A006A5FF9 /* AuthInteractor.swift in Sources */,
 				412C79B52D4D03F1006D9383 /* PinCodeCircles.swift in Sources */,
 				411FE51C2D48EC0A006A5FF9 /* AuthViewController.swift in Sources */,
@@ -682,7 +625,6 @@
 				411FE5302D4A4B92006A5FF9 /* FirebaseAuthManager.swift in Sources */,
 				411FE5262D48F01F006A5FF9 /* LogInPasswordTextField.swift in Sources */,
 				412C79B92D4D29E4006D9383 /* UIImageView+.swift in Sources */,
-				411FE51E2D48EC0A006A5FF9 /* AuthConfigurator.swift in Sources */,
 				4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */,
 				412C79C52D4E5533006D9383 /* LoggedPINRouter.swift in Sources */,
 				412C79C62D4E5533006D9383 /* LoggedPINViewController.swift in Sources */,
@@ -693,10 +635,8 @@
 				412C7A202D529877006D9383 /* BathroomViewController.swift in Sources */,
 				412C7A212D529877006D9383 /* BathroomPresenter.swift in Sources */,
 				412C7A222D529877006D9383 /* BathroomConfigurator.swift in Sources */,
-				412C79C72D4E5533006D9383 /* LoggedPINFactory.swift in Sources */,
 				412C79C92D4E5533006D9383 /* LoggedPINInteractor.swift in Sources */,
 				412C79CA2D4E5533006D9383 /* LoggedPINPresenter.swift in Sources */,
-				412C79CB2D4E5533006D9383 /* LoggedPINConfigurator.swift in Sources */,
 				411BD9072D48195E002252CA /* AppDelegate.swift in Sources */,
 				412C79EA2D529246006D9383 /* HomeInteractor.swift in Sources */,
 				412C79EB2D529246006D9383 /* HomeViewController.swift in Sources */,

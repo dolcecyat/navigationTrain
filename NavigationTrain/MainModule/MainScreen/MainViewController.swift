@@ -42,32 +42,34 @@ class MainViewController: UITabBarController, MainDisplayLogic {
 
 // MARK: - Display Logic Functions
 extension MainViewController {
-
 }
 
 // MARK: - Set UI Functions
 extension MainViewController {
     
+    private func setupView() {
+        setTabBar()
+    }
+    
+    // MARK: Tabbar Sett Up
+    
     func setTabBar() {
         guard let views = router?.getTabScreens() else { return }
-        let flowers = setScreenTabBarItem(title: "Flowers", image: ScreensImages.flowers, vc: views[.flowers])
-        let home = setScreenTabBarItem(title: "Home", image: ScreensImages.home, vc: views[.home])
-        let furniture = setScreenTabBarItem(title: "Furniture", image: ScreensImages.furniture, vc: views[.furniture])
-        let bathroom = setScreenTabBarItem(title: "Bathroom", image: ScreensImages.bathroom, vc: views[.bathroom])
+        let flowers = setScreenTabBarItem(title: "Flowers", image: ScreensImages.flowers, navVc: views[.flowers])
+        let home = setScreenTabBarItem(title: "Home", image: ScreensImages.home, navVc: views[.home])
+        let furniture = setScreenTabBarItem(title: "Furniture", image: ScreensImages.furniture, navVc: views[.furniture])
+        let bathroom = setScreenTabBarItem(title: "Bathroom", image: ScreensImages.bathroom, navVc: views[.bathroom])
         subViews = [flowers,bathroom,furniture,home]
         self.setViewControllers(subViews, animated: true)
     }
  
-    private func setScreenTabBarItem(title: String,image: UIImage, vc: UIViewController?)-> UIViewController {
-        guard let vc else { return UIViewController() }
-        vc.tabBarItem.title = title
-        vc.tabBarItem.image = image
-        return vc
+    private func setScreenTabBarItem(title: String,image: UIImage, navVc: UINavigationController?)-> UINavigationController {
+        guard let navVc else { return UINavigationController() }
+        navVc.tabBarItem.title = title
+        navVc.tabBarItem.image = image
+        return navVc
     }
-    
-    private func setupView() {
-        setTabBar()
-    }
+  
  
 }
 extension MainViewController : UITabBarControllerDelegate {

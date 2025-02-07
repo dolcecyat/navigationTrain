@@ -12,7 +12,7 @@ protocol HomeDisplayLogic: UIViewController {
     var router: HomeRoutingLogic? { get set }
 }
 
-class HomeViewController: UIViewController, HomeDisplayLogic,TabBarViewProtocol {
+class HomeViewController: UIViewController, TabBarViewProtocol {
     var interactor: HomeBusinessLogic?
     var router: HomeRoutingLogic?
     
@@ -24,14 +24,15 @@ class HomeViewController: UIViewController, HomeDisplayLogic,TabBarViewProtocol 
 }
 
 // MARK: - Display Logic Functions
-extension HomeViewController {
+extension HomeViewController: HomeDisplayLogic {
 
 }
 
 // MARK: - Set UI Functions
 extension HomeViewController {
+    
     private func setupView() {
-        
+        view.backgroundColor = .systemPink
     }
  
 }

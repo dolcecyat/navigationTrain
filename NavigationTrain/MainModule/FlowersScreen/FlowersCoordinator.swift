@@ -13,7 +13,7 @@ protocol FlowersCoordinatorProtocol: AnyObject {
 }
 
 class FlowersCoordinator {
-    private let parentCoordinator = CardinalCoordinator.shared
+    private let parentCoordinator = MainCoordinator.shared
     let factory = FlowersFactory(configurator: FlowersConfigurator())
 
 }
