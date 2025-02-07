@@ -64,6 +64,15 @@
 		412C7A212D529877006D9383 /* BathroomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A192D529877006D9383 /* BathroomPresenter.swift */; };
 		412C7A252D55FA68006D9383 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A242D55FA68006D9383 /* AuthFactory.swift */; };
 		412C7A272D55FFFB006D9383 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A262D55FFFB006D9383 /* MainFactory.swift */; };
+		412C7A312D561148006D9383 /* DetailsOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A2D2D561148006D9383 /* DetailsOnePresenter.swift */; };
+		412C7A322D561148006D9383 /* DetailsOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A2F2D561148006D9383 /* DetailsOneViewController.swift */; };
+		412C7A352D561148006D9383 /* DetailsOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A2C2D561148006D9383 /* DetailsOneInteractor.swift */; };
+		412C7A362D561148006D9383 /* DetailsOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A2E2D561148006D9383 /* DetailsOneRouter.swift */; };
+		412C7A382D56116A006D9383 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A372D56116A006D9383 /* HomeFactory.swift */; };
+		412C7A462D561506006D9383 /* DetailsTwoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A432D561506006D9383 /* DetailsTwoRouter.swift */; };
+		412C7A472D561506006D9383 /* DetailsTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A422D561506006D9383 /* DetailsTwoPresenter.swift */; };
+		412C7A492D561506006D9383 /* DetailsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A442D561506006D9383 /* DetailsTwoViewController.swift */; };
+		412C7A4A2D561506006D9383 /* DetailsTwoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A412D561506006D9383 /* DetailsTwoInteractor.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		43D7B17FE7BBA26994F32788 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -129,6 +138,15 @@
 		412C7A1B2D529877006D9383 /* BathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
 		412C7A242D55FA68006D9383 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
 		412C7A262D55FFFB006D9383 /* MainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
+		412C7A2C2D561148006D9383 /* DetailsOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOneInteractor.swift; sourceTree = "<group>"; };
+		412C7A2D2D561148006D9383 /* DetailsOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOnePresenter.swift; sourceTree = "<group>"; };
+		412C7A2E2D561148006D9383 /* DetailsOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOneRouter.swift; sourceTree = "<group>"; };
+		412C7A2F2D561148006D9383 /* DetailsOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOneViewController.swift; sourceTree = "<group>"; };
+		412C7A372D56116A006D9383 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		412C7A412D561506006D9383 /* DetailsTwoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoInteractor.swift; sourceTree = "<group>"; };
+		412C7A422D561506006D9383 /* DetailsTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoPresenter.swift; sourceTree = "<group>"; };
+		412C7A432D561506006D9383 /* DetailsTwoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoRouter.swift; sourceTree = "<group>"; };
+		412C7A442D561506006D9383 /* DetailsTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoViewController.swift; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59C274DB6DDC9517C21AF1 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -335,11 +353,13 @@
 		412C79E02D528E6E006D9383 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				412C7A372D56116A006D9383 /* HomeFactory.swift */,
 				412C79E42D529246006D9383 /* HomeCoordinator.swift */,
 				412C79E62D529246006D9383 /* HomeInteractor.swift */,
 				412C79E72D529246006D9383 /* HomePresenter.swift */,
 				412C79E82D529246006D9383 /* HomeRouter.swift */,
 				412C79E92D529246006D9383 /* HomeViewController.swift */,
+				412C7A282D56112F006D9383 /* DetailsScreens */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -378,6 +398,37 @@
 				412C7A1B2D529877006D9383 /* BathroomViewController.swift */,
 			);
 			path = BathroomScreen;
+			sourceTree = "<group>";
+		};
+		412C7A282D56112F006D9383 /* DetailsScreens */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A392D5614C6006D9383 /* DetailsOne */,
+				412C7A3D2D5614F2006D9383 /* DetailsTwo */,
+			);
+			path = DetailsScreens;
+			sourceTree = "<group>";
+		};
+		412C7A392D5614C6006D9383 /* DetailsOne */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A2C2D561148006D9383 /* DetailsOneInteractor.swift */,
+				412C7A2D2D561148006D9383 /* DetailsOnePresenter.swift */,
+				412C7A2E2D561148006D9383 /* DetailsOneRouter.swift */,
+				412C7A2F2D561148006D9383 /* DetailsOneViewController.swift */,
+			);
+			path = DetailsOne;
+			sourceTree = "<group>";
+		};
+		412C7A3D2D5614F2006D9383 /* DetailsTwo */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A412D561506006D9383 /* DetailsTwoInteractor.swift */,
+				412C7A422D561506006D9383 /* DetailsTwoPresenter.swift */,
+				412C7A432D561506006D9383 /* DetailsTwoRouter.swift */,
+				412C7A442D561506006D9383 /* DetailsTwoViewController.swift */,
+			);
+			path = DetailsTwo;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {
@@ -551,6 +602,10 @@
 				411FE51C2D48EC0A006A5FF9 /* AuthViewController.swift in Sources */,
 				411FE52E2D4A4B7F006A5FF9 /* UDStorageManager.swift in Sources */,
 				411FE51D2D48EC0A006A5FF9 /* AuthCoordinator.swift in Sources */,
+				412C7A312D561148006D9383 /* DetailsOnePresenter.swift in Sources */,
+				412C7A322D561148006D9383 /* DetailsOneViewController.swift in Sources */,
+				412C7A352D561148006D9383 /* DetailsOneInteractor.swift in Sources */,
+				412C7A362D561148006D9383 /* DetailsOneRouter.swift in Sources */,
 				411FE5302D4A4B92006A5FF9 /* FirebaseAuthManager.swift in Sources */,
 				411FE5262D48F01F006A5FF9 /* LogInPasswordTextField.swift in Sources */,
 				412C79B92D4D29E4006D9383 /* UIImageView+.swift in Sources */,
@@ -560,11 +615,16 @@
 				412C7A1C2D529877006D9383 /* BathroomInteractor.swift in Sources */,
 				412C7A1D2D529877006D9383 /* BathroomRouter.swift in Sources */,
 				412C7A1E2D529877006D9383 /* BathroomCoordinator.swift in Sources */,
+				412C7A382D56116A006D9383 /* HomeFactory.swift in Sources */,
 				412C7A202D529877006D9383 /* BathroomViewController.swift in Sources */,
 				412C7A212D529877006D9383 /* BathroomPresenter.swift in Sources */,
 				412C79C92D4E5533006D9383 /* LoggedPINInteractor.swift in Sources */,
 				412C79CA2D4E5533006D9383 /* LoggedPINPresenter.swift in Sources */,
 				411BD9072D48195E002252CA /* AppDelegate.swift in Sources */,
+				412C7A462D561506006D9383 /* DetailsTwoRouter.swift in Sources */,
+				412C7A472D561506006D9383 /* DetailsTwoPresenter.swift in Sources */,
+				412C7A492D561506006D9383 /* DetailsTwoViewController.swift in Sources */,
+				412C7A4A2D561506006D9383 /* DetailsTwoInteractor.swift in Sources */,
 				412C79EA2D529246006D9383 /* HomeInteractor.swift in Sources */,
 				412C79EB2D529246006D9383 /* HomeViewController.swift in Sources */,
 				412C79ED2D529246006D9383 /* HomePresenter.swift in Sources */,

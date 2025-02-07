@@ -10,9 +10,16 @@ import UIKit
 
 protocol HomeRoutingLogic {
     var viewController: HomeDisplayLogic? { get set }
+    func detailButtonPressed()
 
 }
 
 class HomeRouter: NSObject, HomeRoutingLogic {
    weak var viewController: HomeDisplayLogic?
+    private let coordinator: HomeCoordinatorProtocol = HomeCoordinator()
+    
+    func detailButtonPressed() {
+        let vcToOpen = coordinator.openDetailOneScreen()
+        viewController?.navigationController?.pushViewController(vcToOpen, animated: true)
+    }
 }
