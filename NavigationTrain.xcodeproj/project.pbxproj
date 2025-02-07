@@ -95,6 +95,11 @@
 		412C7A982D5626F3006D9383 /* BathroomOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */; };
 		412C7A9C2D5626F3006D9383 /* BathroomOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A932D5626F3006D9383 /* BathroomOnePresenter.swift */; };
 		412C7A9E2D5627DE006D9383 /* BathroomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */; };
+		412C7AA02D562931006D9383 /* FlowersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A9F2D562931006D9383 /* FlowersFactory.swift */; };
+		412C7AAA2D56297B006D9383 /* FlowersOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7AA62D56297B006D9383 /* FlowersOneInteractor.swift */; };
+		412C7AAB2D56297B006D9383 /* FlowersOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7AA82D56297B006D9383 /* FlowersOneRouter.swift */; };
+		412C7AAC2D56297B006D9383 /* FlowersOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7AA72D56297B006D9383 /* FlowersOnePresenter.swift */; };
+		412C7AAE2D56297B006D9383 /* FlowersOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7AA92D56297B006D9383 /* FlowersOneViewController.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		43D7B17FE7BBA26994F32788 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -191,6 +196,11 @@
 		412C7A942D5626F3006D9383 /* BathroomOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOneRouter.swift; sourceTree = "<group>"; };
 		412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOneViewController.swift; sourceTree = "<group>"; };
 		412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomFactory.swift; sourceTree = "<group>"; };
+		412C7A9F2D562931006D9383 /* FlowersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersFactory.swift; sourceTree = "<group>"; };
+		412C7AA62D56297B006D9383 /* FlowersOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersOneInteractor.swift; sourceTree = "<group>"; };
+		412C7AA72D56297B006D9383 /* FlowersOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersOnePresenter.swift; sourceTree = "<group>"; };
+		412C7AA82D56297B006D9383 /* FlowersOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersOneRouter.swift; sourceTree = "<group>"; };
+		412C7AA92D56297B006D9383 /* FlowersOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersOneViewController.swift; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59C274DB6DDC9517C21AF1 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -407,11 +417,9 @@
 		412C79F22D529406006D9383 /* FlowersScreen */ = {
 			isa = PBXGroup;
 			children = (
+				412C7A9F2D562931006D9383 /* FlowersFactory.swift */,
 				412C79F42D52942B006D9383 /* FlowersCoordinator.swift */,
-				412C79F62D52942B006D9383 /* FlowersInteractor.swift */,
-				412C79F72D52942B006D9383 /* FlowersPresenter.swift */,
-				412C79F82D52942B006D9383 /* FlowersRouter.swift */,
-				412C79F92D52942B006D9383 /* FlowersViewController.swift */,
+				412C7AA12D562955006D9383 /* FlowersMainScreen */,
 			);
 			path = FlowersScreen;
 			sourceTree = "<group>";
@@ -567,6 +575,29 @@
 				412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */,
 			);
 			path = BathroomOne;
+			sourceTree = "<group>";
+		};
+		412C7AA12D562955006D9383 /* FlowersMainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				412C79F62D52942B006D9383 /* FlowersInteractor.swift */,
+				412C79F72D52942B006D9383 /* FlowersPresenter.swift */,
+				412C79F82D52942B006D9383 /* FlowersRouter.swift */,
+				412C79F92D52942B006D9383 /* FlowersViewController.swift */,
+				412C7AA22D56295F006D9383 /* FlowersOne */,
+			);
+			path = FlowersMainScreen;
+			sourceTree = "<group>";
+		};
+		412C7AA22D56295F006D9383 /* FlowersOne */ = {
+			isa = PBXGroup;
+			children = (
+				412C7AA62D56297B006D9383 /* FlowersOneInteractor.swift */,
+				412C7AA72D56297B006D9383 /* FlowersOnePresenter.swift */,
+				412C7AA82D56297B006D9383 /* FlowersOneRouter.swift */,
+				412C7AA92D56297B006D9383 /* FlowersOneViewController.swift */,
+			);
+			path = FlowersOne;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {
@@ -732,6 +763,7 @@
 				412C79DA2D50D4CF006D9383 /* MainCoordinator.swift in Sources */,
 				412C79DC2D50D4CF006D9383 /* MainViewController.swift in Sources */,
 				412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */,
+				412C7AA02D562931006D9383 /* FlowersFactory.swift in Sources */,
 				412C79BB2D4E5234006D9383 /* UserInfo.swift in Sources */,
 				412C7A852D561FB2006D9383 /* FurnitureTwoInteractor.swift in Sources */,
 				412C7A872D561FB2006D9383 /* FurnitureTwoPresenter.swift in Sources */,
@@ -791,6 +823,10 @@
 				412C7A982D5626F3006D9383 /* BathroomOneViewController.swift in Sources */,
 				412C7A9C2D5626F3006D9383 /* BathroomOnePresenter.swift in Sources */,
 				412C79F02D529246006D9383 /* HomeRouter.swift in Sources */,
+				412C7AAA2D56297B006D9383 /* FlowersOneInteractor.swift in Sources */,
+				412C7AAB2D56297B006D9383 /* FlowersOneRouter.swift in Sources */,
+				412C7AAC2D56297B006D9383 /* FlowersOnePresenter.swift in Sources */,
+				412C7AAE2D56297B006D9383 /* FlowersOneViewController.swift in Sources */,
 				412C7A0C2D529551006D9383 /* FurniturePresenter.swift in Sources */,
 				412C7A0E2D529551006D9383 /* FurnitureInteractor.swift in Sources */,
 				412C7A0F2D529551006D9383 /* FurnitureRouter.swift in Sources */,

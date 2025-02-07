@@ -54,6 +54,8 @@ extension ContactsOneViewController {
     }
     private func setUI() {
         self.navigationController?.navigationBar.tintColor = .black
+        navigationItem.title = "ContactsOne"
+        self.navigationController?.navigationBar.tintColor = .black
         nextScreenButton.setTitle("Next Screen", for: .normal)
         nextScreenButton.setTitleColor(.black, for: .normal)
         nextScreenButton.backgroundColor = .systemGray

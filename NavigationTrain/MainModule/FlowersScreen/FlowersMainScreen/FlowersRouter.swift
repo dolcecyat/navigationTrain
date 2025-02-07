@@ -10,9 +10,15 @@ import UIKit
 
 protocol FlowersRoutingLogic {
     var viewController: FlowersDisplayLogic? { get set }
-
+    func nextScreenButtonPressed()
 }
 
 class FlowersRouter: NSObject, FlowersRoutingLogic {
    weak var viewController: FlowersDisplayLogic?
+    private let coordinator: FlowersCoordinatorProtocol = FlowersCoordinator()
+    
+    func nextScreenButtonPressed() {
+        let vcToOpen = coordinator.createFlowersOneScreen()
+        viewController?.navigationController?.pushViewController(vcToOpen, animated: true)
+    }
 }

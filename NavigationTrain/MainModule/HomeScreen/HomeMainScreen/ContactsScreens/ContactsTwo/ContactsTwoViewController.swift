@@ -31,7 +31,9 @@ extension ContactsTwoViewController {
 // MARK: - Set UI Functions
 extension ContactsTwoViewController {
     private func setupView() {
-        
+        self.navigationController?.navigationBar.barTintColor = .black
+        navigationItem.title = "ContactsTwo"
+
     }
  
 }

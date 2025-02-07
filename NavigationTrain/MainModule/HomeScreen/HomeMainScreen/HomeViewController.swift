@@ -64,6 +64,8 @@ extension HomeViewController {
     }
     private func setUI() {
         self.navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationItem.title = "Home"
         view.backgroundColor = .white
         detailButton.setTitle("Details", for: .normal)
         detailButton.setTitleColor(.black, for: .normal)

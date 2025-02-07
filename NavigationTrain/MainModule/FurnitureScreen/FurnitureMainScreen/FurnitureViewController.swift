@@ -55,6 +55,8 @@ extension FurnitureViewController {
     }
     private func setUI() {
         self.navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationItem.title = "Furniture"
         view.backgroundColor = .cyan
         nextScreenButton.setTitle("Next Screen", for: .normal)
         nextScreenButton.setTitleColor(.black, for: .normal)

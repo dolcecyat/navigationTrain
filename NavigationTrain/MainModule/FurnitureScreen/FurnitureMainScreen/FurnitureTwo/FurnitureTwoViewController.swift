@@ -31,6 +31,8 @@ extension FurnitureTwoViewController {
 // MARK: - Set UI Functions
 extension FurnitureTwoViewController {
     private func setupView() {
+        navigationItem.title = "Furniture Two"
+
         
     }
  

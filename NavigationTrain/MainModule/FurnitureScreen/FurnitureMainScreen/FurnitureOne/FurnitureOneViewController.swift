@@ -55,6 +55,8 @@ extension FurnitureOneViewController {
         ])
     }
     private func setUI() {
+        navigationItem.title = "Furniture One"
+
         self.navigationController?.navigationBar.tintColor = .black
         view.backgroundColor = .lightGray
         nextScreenButton.setTitle("Next Screen", for: .normal)

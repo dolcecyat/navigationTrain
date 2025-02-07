@@ -31,6 +31,7 @@ extension BathroomOneViewController {
 // MARK: - Set UI Functions
 extension BathroomOneViewController {
     private func setupView() {
+        navigationItem.title = "Bathroom One"
         
     }
  

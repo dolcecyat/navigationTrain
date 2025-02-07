@@ -1,5 +1,5 @@
 //
-//  BathroomViewController.swift
+//  FlowersViewController.swift
 //  NavigationTrain
 //
 //  Created by Алина Класс on 04.02.2025.
@@ -7,30 +7,30 @@
 
 import UIKit
 
-protocol BathroomDisplayLogic: UIViewController {
-    var interactor: BathroomBusinessLogic? { get set }
-    var router: BathroomRoutingLogic? { get set }
+protocol FlowersDisplayLogic: UIViewController {
+    var interactor: FlowersBusinessLogic? { get set }
+    var router: FlowersRoutingLogic? { get set }
 }
 
-class BathroomViewController: UIViewController, BathroomDisplayLogic,TabBarViewProtocol {
-    var interactor: BathroomBusinessLogic?
-    var router: BathroomRoutingLogic?
+class FlowersViewController: UIViewController, FlowersDisplayLogic,TabBarViewProtocol {
+    var interactor: FlowersBusinessLogic?
+    var router: FlowersRoutingLogic?
     private let nextScreenButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemBlue
         setup()
     }
 }
 
 // MARK: - Display Logic Functions
-extension BathroomViewController {
+extension FlowersViewController {
 
 }
 
 // MARK: - Set UI Functions
-extension BathroomViewController {
+extension FlowersViewController {
     private func setup() {
         addViews()
         setConstraints()
@@ -53,8 +53,9 @@ extension BathroomViewController {
         ])
     }
     private func setUI() {
+        self.navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
-        navigationItem.title = "Bathroom"
+        navigationItem.title = "Flowers"
         self.navigationController?.navigationBar.tintColor = .black
         nextScreenButton.setTitle("Next Screen", for: .normal)
         nextScreenButton.setTitleColor(.black, for: .normal)
@@ -70,4 +71,5 @@ extension BathroomViewController {
     @objc private func nextScreenButtonPressed() {
         router?.nextScreenButtonPressed()
     }
+ 
 }
