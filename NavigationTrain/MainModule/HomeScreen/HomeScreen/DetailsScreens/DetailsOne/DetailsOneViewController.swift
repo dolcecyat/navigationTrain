@@ -69,5 +69,4 @@ extension DetailsOneViewController {
     @objc private func nextScreenButtonPressed() {
         router?.nextScreenButtonPressed()
     }
- 
 }

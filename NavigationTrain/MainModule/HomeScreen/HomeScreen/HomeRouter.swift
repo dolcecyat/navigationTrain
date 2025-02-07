@@ -11,6 +11,7 @@ import UIKit
 protocol HomeRoutingLogic {
     var viewController: HomeDisplayLogic? { get set }
     func detailButtonPressed()
+    func contactsButtonPressed()
 
 }
 
@@ -20,6 +21,11 @@ class HomeRouter: NSObject, HomeRoutingLogic {
     
     func detailButtonPressed() {
         let vcToOpen = coordinator.openDetailOneScreen()
+        viewController?.navigationController?.pushViewController(vcToOpen, animated: true)
+    }
+    
+    func contactsButtonPressed() {
+        let vcToOpen = coordinator.openContactsOneScreen()
         viewController?.navigationController?.pushViewController(vcToOpen, animated: true)
     }
 }

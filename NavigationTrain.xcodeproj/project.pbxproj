@@ -73,6 +73,14 @@
 		412C7A472D561506006D9383 /* DetailsTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A422D561506006D9383 /* DetailsTwoPresenter.swift */; };
 		412C7A492D561506006D9383 /* DetailsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A442D561506006D9383 /* DetailsTwoViewController.swift */; };
 		412C7A4A2D561506006D9383 /* DetailsTwoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A412D561506006D9383 /* DetailsTwoInteractor.swift */; };
+		412C7A552D561835006D9383 /* ContactsOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A542D561835006D9383 /* ContactsOneViewController.swift */; };
+		412C7A572D561835006D9383 /* ContactsOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A522D561835006D9383 /* ContactsOnePresenter.swift */; };
+		412C7A5A2D561835006D9383 /* ContactsOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A512D561835006D9383 /* ContactsOneInteractor.swift */; };
+		412C7A5B2D561835006D9383 /* ContactsOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A532D561835006D9383 /* ContactsOneRouter.swift */; };
+		412C7A652D5618AB006D9383 /* ContactsTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A622D5618AB006D9383 /* ContactsTwoPresenter.swift */; };
+		412C7A672D5618AB006D9383 /* ContactsTwoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A632D5618AB006D9383 /* ContactsTwoRouter.swift */; };
+		412C7A692D5618AB006D9383 /* ContactsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */; };
+		412C7A6A2D5618AB006D9383 /* ContactsTwoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A612D5618AB006D9383 /* ContactsTwoInteractor.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		43D7B17FE7BBA26994F32788 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -147,6 +155,14 @@
 		412C7A422D561506006D9383 /* DetailsTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoPresenter.swift; sourceTree = "<group>"; };
 		412C7A432D561506006D9383 /* DetailsTwoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoRouter.swift; sourceTree = "<group>"; };
 		412C7A442D561506006D9383 /* DetailsTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTwoViewController.swift; sourceTree = "<group>"; };
+		412C7A512D561835006D9383 /* ContactsOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOneInteractor.swift; sourceTree = "<group>"; };
+		412C7A522D561835006D9383 /* ContactsOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOnePresenter.swift; sourceTree = "<group>"; };
+		412C7A532D561835006D9383 /* ContactsOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOneRouter.swift; sourceTree = "<group>"; };
+		412C7A542D561835006D9383 /* ContactsOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOneViewController.swift; sourceTree = "<group>"; };
+		412C7A612D5618AB006D9383 /* ContactsTwoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoInteractor.swift; sourceTree = "<group>"; };
+		412C7A622D5618AB006D9383 /* ContactsTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoPresenter.swift; sourceTree = "<group>"; };
+		412C7A632D5618AB006D9383 /* ContactsTwoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoRouter.swift; sourceTree = "<group>"; };
+		412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoViewController.swift; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59C274DB6DDC9517C21AF1 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -355,11 +371,7 @@
 			children = (
 				412C7A372D56116A006D9383 /* HomeFactory.swift */,
 				412C79E42D529246006D9383 /* HomeCoordinator.swift */,
-				412C79E62D529246006D9383 /* HomeInteractor.swift */,
-				412C79E72D529246006D9383 /* HomePresenter.swift */,
-				412C79E82D529246006D9383 /* HomeRouter.swift */,
-				412C79E92D529246006D9383 /* HomeViewController.swift */,
-				412C7A282D56112F006D9383 /* DetailsScreens */,
+				412C7A4D2D56180B006D9383 /* HomeScreen */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -429,6 +441,50 @@
 				412C7A442D561506006D9383 /* DetailsTwoViewController.swift */,
 			);
 			path = DetailsTwo;
+			sourceTree = "<group>";
+		};
+		412C7A4C2D5617ED006D9383 /* ContactsScreens */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A5C2D561882006D9383 /* ContactsOne */,
+				412C7A5D2D561899006D9383 /* ContactsTwo */,
+			);
+			path = ContactsScreens;
+			sourceTree = "<group>";
+		};
+		412C7A4D2D56180B006D9383 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				412C79E62D529246006D9383 /* HomeInteractor.swift */,
+				412C79E72D529246006D9383 /* HomePresenter.swift */,
+				412C79E82D529246006D9383 /* HomeRouter.swift */,
+				412C79E92D529246006D9383 /* HomeViewController.swift */,
+				412C7A282D56112F006D9383 /* DetailsScreens */,
+				412C7A4C2D5617ED006D9383 /* ContactsScreens */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		412C7A5C2D561882006D9383 /* ContactsOne */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A512D561835006D9383 /* ContactsOneInteractor.swift */,
+				412C7A522D561835006D9383 /* ContactsOnePresenter.swift */,
+				412C7A532D561835006D9383 /* ContactsOneRouter.swift */,
+				412C7A542D561835006D9383 /* ContactsOneViewController.swift */,
+			);
+			path = ContactsOne;
+			sourceTree = "<group>";
+		};
+		412C7A5D2D561899006D9383 /* ContactsTwo */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A612D5618AB006D9383 /* ContactsTwoInteractor.swift */,
+				412C7A622D5618AB006D9383 /* ContactsTwoPresenter.swift */,
+				412C7A632D5618AB006D9383 /* ContactsTwoRouter.swift */,
+				412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */,
+			);
+			path = ContactsTwo;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {
@@ -604,6 +660,10 @@
 				411FE51D2D48EC0A006A5FF9 /* AuthCoordinator.swift in Sources */,
 				412C7A312D561148006D9383 /* DetailsOnePresenter.swift in Sources */,
 				412C7A322D561148006D9383 /* DetailsOneViewController.swift in Sources */,
+				412C7A552D561835006D9383 /* ContactsOneViewController.swift in Sources */,
+				412C7A572D561835006D9383 /* ContactsOnePresenter.swift in Sources */,
+				412C7A5A2D561835006D9383 /* ContactsOneInteractor.swift in Sources */,
+				412C7A5B2D561835006D9383 /* ContactsOneRouter.swift in Sources */,
 				412C7A352D561148006D9383 /* DetailsOneInteractor.swift in Sources */,
 				412C7A362D561148006D9383 /* DetailsOneRouter.swift in Sources */,
 				411FE5302D4A4B92006A5FF9 /* FirebaseAuthManager.swift in Sources */,
@@ -620,6 +680,10 @@
 				412C7A212D529877006D9383 /* BathroomPresenter.swift in Sources */,
 				412C79C92D4E5533006D9383 /* LoggedPINInteractor.swift in Sources */,
 				412C79CA2D4E5533006D9383 /* LoggedPINPresenter.swift in Sources */,
+				412C7A652D5618AB006D9383 /* ContactsTwoPresenter.swift in Sources */,
+				412C7A672D5618AB006D9383 /* ContactsTwoRouter.swift in Sources */,
+				412C7A692D5618AB006D9383 /* ContactsTwoViewController.swift in Sources */,
+				412C7A6A2D5618AB006D9383 /* ContactsTwoInteractor.swift in Sources */,
 				411BD9072D48195E002252CA /* AppDelegate.swift in Sources */,
 				412C7A462D561506006D9383 /* DetailsTwoRouter.swift in Sources */,
 				412C7A472D561506006D9383 /* DetailsTwoPresenter.swift in Sources */,

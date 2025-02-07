@@ -20,8 +20,8 @@ class HomeFactory {
         vc.router = router
         router.viewController = vc
         return vc
-  
     }
+    
     func makeDetailsTwo() ->  DetailsTwoDisplayLogic {
         let vc =  DetailsTwoViewController()
         let interactor = DetailsTwoInteractor()
@@ -33,7 +33,31 @@ class HomeFactory {
         vc.router = router
         router.viewController = vc
         return vc
-  
     }
     
+    func makeContactsOne() ->  ContactsOneDisplayLogic {
+        let vc =  ContactsOneViewController()
+        let interactor = ContactsOneInteractor()
+        let presenter = ContactsOnePresenter()
+        let router = ContactsOneRouter()
+        presenter.viewController = vc
+        interactor.presenter = presenter
+        vc.interactor = interactor
+        vc.router = router
+        router.viewController = vc
+        return vc
+    }
+    
+    func makeContactsTwo() ->  ContactsTwoDisplayLogic {
+        let vc =  ContactsTwoViewController()
+        let interactor = ContactsTwoInteractor()
+        let presenter = ContactsTwoPresenter()
+        let router = ContactsTwoRouter()
+        presenter.viewController = vc
+        interactor.presenter = presenter
+        vc.interactor = interactor
+        vc.router = router
+        router.viewController = vc
+        return vc
+    }
 }

@@ -87,6 +87,6 @@ extension HomeViewController {
     }
  
     @objc private func contactsButtonPressed() {
-        print("@")
+        router?.contactsButtonPressed()
     }
 }

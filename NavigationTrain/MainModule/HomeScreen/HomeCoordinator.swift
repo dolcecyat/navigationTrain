@@ -11,6 +11,8 @@ import UIKit
 protocol HomeCoordinatorProtocol: AnyObject {
     func openDetailOneScreen()-> DetailsOneDisplayLogic
     func openDetailTwoScreen()-> DetailsTwoDisplayLogic
+    func openContactsOneScreen()-> ContactsOneDisplayLogic
+    func openContactsTwoScreen()-> ContactsTwoDisplayLogic
 }
 
 class HomeCoordinator {
@@ -27,5 +29,13 @@ extension HomeCoordinator: HomeCoordinatorProtocol {
     
     func openDetailTwoScreen()-> DetailsTwoDisplayLogic {
         factory.makeDetailsTwo()
+    }
+    
+    func openContactsOneScreen()-> ContactsOneDisplayLogic {
+        factory.makeContactsOne()
+    }
+    
+    func openContactsTwoScreen()-> ContactsTwoDisplayLogic {
+        factory.makeContactsTwo()
     }
 }
