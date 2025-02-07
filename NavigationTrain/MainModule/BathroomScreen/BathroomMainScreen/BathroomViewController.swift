@@ -1,36 +1,36 @@
 //
-//  ContactsOneViewController.swift
+//  BathroomViewController.swift
 //  NavigationTrain
 //
-//  Created by Алина Класс on 07.02.2025.
+//  Created by Алина Класс on 04.02.2025.
 //
 
 import UIKit
 
-protocol ContactsOneDisplayLogic: UIViewController {
-    var interactor: ContactsOneBusinessLogic? { get set }
-    var router: ContactsOneRoutingLogic? { get set }
+protocol BathroomDisplayLogic: UIViewController {
+    var interactor: BathroomBusinessLogic? { get set }
+    var router: BathroomRoutingLogic? { get set }
 }
 
-class ContactsOneViewController: UIViewController, ContactsOneDisplayLogic {
-    var interactor: ContactsOneBusinessLogic?
-    var router: ContactsOneRoutingLogic?
+class BathroomViewController: UIViewController, BathroomDisplayLogic,TabBarViewProtocol {
+    var interactor: BathroomBusinessLogic?
+    var router: BathroomRoutingLogic?
     private let nextScreenButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = .systemRed
         setup()
     }
 }
 
 // MARK: - Display Logic Functions
-extension ContactsOneViewController {
+extension BathroomViewController {
 
 }
 
 // MARK: - Set UI Functions
-extension ContactsOneViewController {
+extension BathroomViewController {
     private func setup() {
         addViews()
         setConstraints()
@@ -54,7 +54,6 @@ extension ContactsOneViewController {
     }
     private func setUI() {
         self.navigationController?.navigationBar.tintColor = .black
-        view.backgroundColor = .white
         nextScreenButton.setTitle("Next Screen", for: .normal)
         nextScreenButton.setTitleColor(.black, for: .normal)
         nextScreenButton.backgroundColor = .systemGray
@@ -69,4 +68,6 @@ extension ContactsOneViewController {
     @objc private func nextScreenButtonPressed() {
         router?.nextScreenButtonPressed()
     }
+ 
+ 
 }

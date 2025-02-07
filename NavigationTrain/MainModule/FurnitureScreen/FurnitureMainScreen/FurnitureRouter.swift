@@ -10,9 +10,15 @@ import UIKit
 
 protocol FurnitureRoutingLogic {
     var viewController: FurnitureDisplayLogic? { get set }
+    func nextScreenButtonPressed()
 
 }
 
 class FurnitureRouter: NSObject, FurnitureRoutingLogic {
    weak var viewController: FurnitureDisplayLogic?
+    private let coordinator: FurnitureCoordinatorProtocol = FurnitureCoordinator()
+    func nextScreenButtonPressed() {
+        let vcToOpen = coordinator.createFurnitureOneScreen()
+        viewController?.navigationController?.pushViewController(vcToOpen, animated: true)
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  DetailsOneViewController.swift
+//  FurnitureOneViewController.swift
 //  NavigationTrain
 //
 //  Created by Алина Класс on 07.02.2025.
@@ -7,15 +7,17 @@
 
 import UIKit
 
-protocol DetailsOneDisplayLogic: UIViewController {
-    var interactor: DetailsOneBusinessLogic? { get set }
-    var router: DetailsOneRoutingLogic? { get set }
+protocol FurnitureOneDisplayLogic: UIViewController {
+    var interactor: FurnitureOneBusinessLogic? { get set }
+    var router: FurnitureOneRoutingLogic? { get set }
 }
 
-class DetailsOneViewController: UIViewController, DetailsOneDisplayLogic {
-    var interactor: DetailsOneBusinessLogic?
-    var router: DetailsOneRoutingLogic?
+class FurnitureOneViewController: UIViewController, FurnitureOneDisplayLogic {
+    var interactor: FurnitureOneBusinessLogic?
+    var router: FurnitureOneRoutingLogic?
+    // MARK: UI Properties
     private let nextScreenButton = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,12 @@ class DetailsOneViewController: UIViewController, DetailsOneDisplayLogic {
 }
 
 // MARK: - Display Logic Functions
-extension DetailsOneViewController {
+extension FurnitureOneViewController {
 
 }
 
 // MARK: - Set UI Functions
-extension DetailsOneViewController {
+extension FurnitureOneViewController {
     private func setup() {
         addViews()
         setConstraints()
@@ -54,7 +56,7 @@ extension DetailsOneViewController {
     }
     private func setUI() {
         self.navigationController?.navigationBar.tintColor = .black
-        view.backgroundColor = .white
+        view.backgroundColor = .lightGray
         nextScreenButton.setTitle("Next Screen", for: .normal)
         nextScreenButton.setTitleColor(.black, for: .normal)
         nextScreenButton.backgroundColor = .systemGray
@@ -69,4 +71,5 @@ extension DetailsOneViewController {
     @objc private func nextScreenButtonPressed() {
         router?.nextScreenButtonPressed()
     }
+ 
 }

@@ -81,6 +81,20 @@
 		412C7A672D5618AB006D9383 /* ContactsTwoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A632D5618AB006D9383 /* ContactsTwoRouter.swift */; };
 		412C7A692D5618AB006D9383 /* ContactsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */; };
 		412C7A6A2D5618AB006D9383 /* ContactsTwoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A612D5618AB006D9383 /* ContactsTwoInteractor.swift */; };
+		412C7A6F2D561F7E006D9383 /* FurnitureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A6E2D561F7E006D9383 /* FurnitureFactory.swift */; };
+		412C7A772D561FA1006D9383 /* FurnitureOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A752D561FA1006D9383 /* FurnitureOneRouter.swift */; };
+		412C7A782D561FA1006D9383 /* FurnitureOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A762D561FA1006D9383 /* FurnitureOneViewController.swift */; };
+		412C7A7A2D561FA1006D9383 /* FurnitureOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A742D561FA1006D9383 /* FurnitureOnePresenter.swift */; };
+		412C7A7D2D561FA1006D9383 /* FurnitureOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A732D561FA1006D9383 /* FurnitureOneInteractor.swift */; };
+		412C7A852D561FB2006D9383 /* FurnitureTwoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A812D561FB2006D9383 /* FurnitureTwoInteractor.swift */; };
+		412C7A872D561FB2006D9383 /* FurnitureTwoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A822D561FB2006D9383 /* FurnitureTwoPresenter.swift */; };
+		412C7A882D561FB2006D9383 /* FurnitureTwoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A832D561FB2006D9383 /* FurnitureTwoRouter.swift */; };
+		412C7A892D561FB2006D9383 /* FurnitureTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A842D561FB2006D9383 /* FurnitureTwoViewController.swift */; };
+		412C7A962D5626F3006D9383 /* BathroomOneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A922D5626F3006D9383 /* BathroomOneInteractor.swift */; };
+		412C7A972D5626F3006D9383 /* BathroomOneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A942D5626F3006D9383 /* BathroomOneRouter.swift */; };
+		412C7A982D5626F3006D9383 /* BathroomOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */; };
+		412C7A9C2D5626F3006D9383 /* BathroomOnePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A932D5626F3006D9383 /* BathroomOnePresenter.swift */; };
+		412C7A9E2D5627DE006D9383 /* BathroomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */; };
 		4183B93E2D48D690008536B2 /* CardinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */; };
 		43D7B17FE7BBA26994F32788 /* Pods_NavigationTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */; };
 /* End PBXBuildFile section */
@@ -163,6 +177,20 @@
 		412C7A622D5618AB006D9383 /* ContactsTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoPresenter.swift; sourceTree = "<group>"; };
 		412C7A632D5618AB006D9383 /* ContactsTwoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoRouter.swift; sourceTree = "<group>"; };
 		412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTwoViewController.swift; sourceTree = "<group>"; };
+		412C7A6E2D561F7E006D9383 /* FurnitureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureFactory.swift; sourceTree = "<group>"; };
+		412C7A732D561FA1006D9383 /* FurnitureOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureOneInteractor.swift; sourceTree = "<group>"; };
+		412C7A742D561FA1006D9383 /* FurnitureOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureOnePresenter.swift; sourceTree = "<group>"; };
+		412C7A752D561FA1006D9383 /* FurnitureOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureOneRouter.swift; sourceTree = "<group>"; };
+		412C7A762D561FA1006D9383 /* FurnitureOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureOneViewController.swift; sourceTree = "<group>"; };
+		412C7A812D561FB2006D9383 /* FurnitureTwoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureTwoInteractor.swift; sourceTree = "<group>"; };
+		412C7A822D561FB2006D9383 /* FurnitureTwoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureTwoPresenter.swift; sourceTree = "<group>"; };
+		412C7A832D561FB2006D9383 /* FurnitureTwoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureTwoRouter.swift; sourceTree = "<group>"; };
+		412C7A842D561FB2006D9383 /* FurnitureTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureTwoViewController.swift; sourceTree = "<group>"; };
+		412C7A922D5626F3006D9383 /* BathroomOneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOneInteractor.swift; sourceTree = "<group>"; };
+		412C7A932D5626F3006D9383 /* BathroomOnePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOnePresenter.swift; sourceTree = "<group>"; };
+		412C7A942D5626F3006D9383 /* BathroomOneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOneRouter.swift; sourceTree = "<group>"; };
+		412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomOneViewController.swift; sourceTree = "<group>"; };
+		412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomFactory.swift; sourceTree = "<group>"; };
 		4183B93D2D48D690008536B2 /* CardinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalCoordinator.swift; sourceTree = "<group>"; };
 		E8A45D2BD6D968EFAAE0B610 /* Pods_NavigationTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59C274DB6DDC9517C21AF1 /* Pods-NavigationTrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationTrain.debug.xcconfig"; path = "Target Support Files/Pods-NavigationTrain/Pods-NavigationTrain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -371,7 +399,7 @@
 			children = (
 				412C7A372D56116A006D9383 /* HomeFactory.swift */,
 				412C79E42D529246006D9383 /* HomeCoordinator.swift */,
-				412C7A4D2D56180B006D9383 /* HomeScreen */,
+				412C7A4D2D56180B006D9383 /* HomeMainScreen */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -391,11 +419,9 @@
 		412C7A042D5294BF006D9383 /* FurnitureScreen */ = {
 			isa = PBXGroup;
 			children = (
+				412C7A6E2D561F7E006D9383 /* FurnitureFactory.swift */,
 				412C7A062D529551006D9383 /* FurnitureCoordinator.swift */,
-				412C7A082D529551006D9383 /* FurnitureInteractor.swift */,
-				412C7A092D529551006D9383 /* FurniturePresenter.swift */,
-				412C7A0A2D529551006D9383 /* FurnitureRouter.swift */,
-				412C7A0B2D529551006D9383 /* FurnitureViewController.swift */,
+				412C7A8C2D562237006D9383 /* FurnitureMainScreen */,
 			);
 			path = FurnitureScreen;
 			sourceTree = "<group>";
@@ -403,11 +429,9 @@
 		412C7A142D5296A9006D9383 /* BathroomScreen */ = {
 			isa = PBXGroup;
 			children = (
+				412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */,
 				412C7A162D529877006D9383 /* BathroomCoordinator.swift */,
-				412C7A182D529877006D9383 /* BathroomInteractor.swift */,
-				412C7A192D529877006D9383 /* BathroomPresenter.swift */,
-				412C7A1A2D529877006D9383 /* BathroomRouter.swift */,
-				412C7A1B2D529877006D9383 /* BathroomViewController.swift */,
+				412C7A8D2D5626B4006D9383 /* BathroomMainScreen */,
 			);
 			path = BathroomScreen;
 			sourceTree = "<group>";
@@ -452,7 +476,7 @@
 			path = ContactsScreens;
 			sourceTree = "<group>";
 		};
-		412C7A4D2D56180B006D9383 /* HomeScreen */ = {
+		412C7A4D2D56180B006D9383 /* HomeMainScreen */ = {
 			isa = PBXGroup;
 			children = (
 				412C79E62D529246006D9383 /* HomeInteractor.swift */,
@@ -462,7 +486,7 @@
 				412C7A282D56112F006D9383 /* DetailsScreens */,
 				412C7A4C2D5617ED006D9383 /* ContactsScreens */,
 			);
-			path = HomeScreen;
+			path = HomeMainScreen;
 			sourceTree = "<group>";
 		};
 		412C7A5C2D561882006D9383 /* ContactsOne */ = {
@@ -485,6 +509,64 @@
 				412C7A642D5618AB006D9383 /* ContactsTwoViewController.swift */,
 			);
 			path = ContactsTwo;
+			sourceTree = "<group>";
+		};
+		412C7A6C2D561F50006D9383 /* FurnitureOne */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A732D561FA1006D9383 /* FurnitureOneInteractor.swift */,
+				412C7A742D561FA1006D9383 /* FurnitureOnePresenter.swift */,
+				412C7A752D561FA1006D9383 /* FurnitureOneRouter.swift */,
+				412C7A762D561FA1006D9383 /* FurnitureOneViewController.swift */,
+			);
+			path = FurnitureOne;
+			sourceTree = "<group>";
+		};
+		412C7A6D2D561F5B006D9383 /* FurnitureTwo */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A812D561FB2006D9383 /* FurnitureTwoInteractor.swift */,
+				412C7A822D561FB2006D9383 /* FurnitureTwoPresenter.swift */,
+				412C7A832D561FB2006D9383 /* FurnitureTwoRouter.swift */,
+				412C7A842D561FB2006D9383 /* FurnitureTwoViewController.swift */,
+			);
+			path = FurnitureTwo;
+			sourceTree = "<group>";
+		};
+		412C7A8C2D562237006D9383 /* FurnitureMainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A082D529551006D9383 /* FurnitureInteractor.swift */,
+				412C7A092D529551006D9383 /* FurniturePresenter.swift */,
+				412C7A0A2D529551006D9383 /* FurnitureRouter.swift */,
+				412C7A0B2D529551006D9383 /* FurnitureViewController.swift */,
+				412C7A6C2D561F50006D9383 /* FurnitureOne */,
+				412C7A6D2D561F5B006D9383 /* FurnitureTwo */,
+			);
+			path = FurnitureMainScreen;
+			sourceTree = "<group>";
+		};
+		412C7A8D2D5626B4006D9383 /* BathroomMainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A182D529877006D9383 /* BathroomInteractor.swift */,
+				412C7A192D529877006D9383 /* BathroomPresenter.swift */,
+				412C7A1A2D529877006D9383 /* BathroomRouter.swift */,
+				412C7A1B2D529877006D9383 /* BathroomViewController.swift */,
+				412C7A8E2D5626D7006D9383 /* BathroomOne */,
+			);
+			path = BathroomMainScreen;
+			sourceTree = "<group>";
+		};
+		412C7A8E2D5626D7006D9383 /* BathroomOne */ = {
+			isa = PBXGroup;
+			children = (
+				412C7A922D5626F3006D9383 /* BathroomOneInteractor.swift */,
+				412C7A932D5626F3006D9383 /* BathroomOnePresenter.swift */,
+				412C7A942D5626F3006D9383 /* BathroomOneRouter.swift */,
+				412C7A952D5626F3006D9383 /* BathroomOneViewController.swift */,
+			);
+			path = BathroomOne;
 			sourceTree = "<group>";
 		};
 		41D7D2322D4A50AF002F76B9 /* CustomUIKit */ = {
@@ -639,6 +721,7 @@
 				412C79FF2D52942B006D9383 /* FlowersCoordinator.swift in Sources */,
 				412C7A002D52942B006D9383 /* FlowersRouter.swift in Sources */,
 				412C799E2D4B7CBE006D9383 /* SignUpPresenter.swift in Sources */,
+				412C7A6F2D561F7E006D9383 /* FurnitureFactory.swift in Sources */,
 				411FE5282D48F658006A5FF9 /* AuthButton.swift in Sources */,
 				411FE5192D48EC0A006A5FF9 /* AuthRouter.swift in Sources */,
 				411FE51A2D48EC0A006A5FF9 /* AuthPresenter.swift in Sources */,
@@ -650,6 +733,10 @@
 				412C79DC2D50D4CF006D9383 /* MainViewController.swift in Sources */,
 				412C79AC2D4CFBA4006D9383 /* PINCodeRouter.swift in Sources */,
 				412C79BB2D4E5234006D9383 /* UserInfo.swift in Sources */,
+				412C7A852D561FB2006D9383 /* FurnitureTwoInteractor.swift in Sources */,
+				412C7A872D561FB2006D9383 /* FurnitureTwoPresenter.swift in Sources */,
+				412C7A882D561FB2006D9383 /* FurnitureTwoRouter.swift in Sources */,
+				412C7A892D561FB2006D9383 /* FurnitureTwoViewController.swift in Sources */,
 				412C79AD2D4CFBA4006D9383 /* PINCodePresenter.swift in Sources */,
 				412C79AE2D4CFBA4006D9383 /* PINCodeViewController.swift in Sources */,
 				412C7A252D55FA68006D9383 /* AuthFactory.swift in Sources */,
@@ -687,6 +774,10 @@
 				411BD9072D48195E002252CA /* AppDelegate.swift in Sources */,
 				412C7A462D561506006D9383 /* DetailsTwoRouter.swift in Sources */,
 				412C7A472D561506006D9383 /* DetailsTwoPresenter.swift in Sources */,
+				412C7A772D561FA1006D9383 /* FurnitureOneRouter.swift in Sources */,
+				412C7A782D561FA1006D9383 /* FurnitureOneViewController.swift in Sources */,
+				412C7A7A2D561FA1006D9383 /* FurnitureOnePresenter.swift in Sources */,
+				412C7A7D2D561FA1006D9383 /* FurnitureOneInteractor.swift in Sources */,
 				412C7A492D561506006D9383 /* DetailsTwoViewController.swift in Sources */,
 				412C7A4A2D561506006D9383 /* DetailsTwoInteractor.swift in Sources */,
 				412C79EA2D529246006D9383 /* HomeInteractor.swift in Sources */,
@@ -694,6 +785,11 @@
 				412C79ED2D529246006D9383 /* HomePresenter.swift in Sources */,
 				412C79EE2D529246006D9383 /* HomeCoordinator.swift in Sources */,
 				412C7A272D55FFFB006D9383 /* MainFactory.swift in Sources */,
+				412C7A9E2D5627DE006D9383 /* BathroomFactory.swift in Sources */,
+				412C7A962D5626F3006D9383 /* BathroomOneInteractor.swift in Sources */,
+				412C7A972D5626F3006D9383 /* BathroomOneRouter.swift in Sources */,
+				412C7A982D5626F3006D9383 /* BathroomOneViewController.swift in Sources */,
+				412C7A9C2D5626F3006D9383 /* BathroomOnePresenter.swift in Sources */,
 				412C79F02D529246006D9383 /* HomeRouter.swift in Sources */,
 				412C7A0C2D529551006D9383 /* FurniturePresenter.swift in Sources */,
 				412C7A0E2D529551006D9383 /* FurnitureInteractor.swift in Sources */,

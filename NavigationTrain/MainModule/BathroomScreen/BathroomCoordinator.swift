@@ -9,14 +9,19 @@ import Foundation
 import UIKit
 
 protocol BathroomCoordinatorProtocol: AnyObject {
-
+    func createBathroomOneScreen()-> BathroomOneDisplayLogic
 }
 
 class BathroomCoordinator {
     private let parentCoordinator = MainCoordinator.shared
+    private let factory = BathroomFactory()
 
 }
 
 extension BathroomCoordinator: BathroomCoordinatorProtocol {
+    func createBathroomOneScreen() ->  BathroomOneDisplayLogic {
+        factory.createBathroomOneScreen()
+    }
+    
 
 }
