@@ -14,7 +14,7 @@ protocol FlowersCoordinatorProtocol: AnyObject {
 
 class FlowersCoordinator {
     private let parentCoordinator = MainCoordinator.shared
-    private let factory = FlowersFactory()
+    private let factory: FlowersFactoryProtocol = FlowersFactory()
 }
 
 extension FlowersCoordinator: FlowersCoordinatorProtocol {

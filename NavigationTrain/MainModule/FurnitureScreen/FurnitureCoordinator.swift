@@ -15,7 +15,7 @@ protocol FurnitureCoordinatorProtocol: AnyObject {
 
 class FurnitureCoordinator {
     private let parentCoordinator = MainCoordinator.shared
-    private let factory = FurnitureFactory()
+    private let factory: FurnitureFactoryProtocol = FurnitureFactory()
 }
 
 extension FurnitureCoordinator: FurnitureCoordinatorProtocol {

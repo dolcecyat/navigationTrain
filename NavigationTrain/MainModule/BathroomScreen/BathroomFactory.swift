@@ -6,8 +6,11 @@
 //
 
 import Foundation
+protocol BathroomFactoryProtocol {
+    func createBathroomOneScreen()-> BathroomOneDisplayLogic
+}
 
-class BathroomFactory {
+class BathroomFactory: BathroomFactoryProtocol {
     
     func createBathroomOneScreen()-> BathroomOneDisplayLogic {
         let vc = BathroomOneViewController()

@@ -7,7 +7,11 @@
 
 import Foundation
 
-class FlowersFactory {
+protocol FlowersFactoryProtocol {
+    func createFlowersOneScreen()-> FlowersOneDisplayLogic
+}
+
+class FlowersFactory: FlowersFactoryProtocol {
     
     func createFlowersOneScreen()-> FlowersOneDisplayLogic {
         let vc = FlowersOneViewController()

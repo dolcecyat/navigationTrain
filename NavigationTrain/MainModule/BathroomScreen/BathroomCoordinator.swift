@@ -14,7 +14,7 @@ protocol BathroomCoordinatorProtocol: AnyObject {
 
 class BathroomCoordinator {
     private let parentCoordinator = MainCoordinator.shared
-    private let factory = BathroomFactory()
+    private let factory: BathroomFactoryProtocol = BathroomFactory()
 
 }
 

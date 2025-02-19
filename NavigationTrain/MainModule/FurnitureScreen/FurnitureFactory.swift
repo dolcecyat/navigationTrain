@@ -6,8 +6,12 @@
 //
 
 import Foundation
+protocol FurnitureFactoryProtocol {
+    func createFurnitureOneScreen()-> FurnitureOneDisplayLogic
+    func createFurnitureTwoScreen()-> FurnitureTwoDisplayLogic
+}
 
-class FurnitureFactory {
+class FurnitureFactory: FurnitureFactoryProtocol {
     
     func createFurnitureOneScreen()-> FurnitureOneDisplayLogic {
         let vc = FurnitureOneViewController()

@@ -6,8 +6,15 @@
 //
 
 import Foundation
+protocol HomeFactoryProtocol {
+    func makeDetailsOne() ->  DetailsOneDisplayLogic
+    func makeDetailsTwo() ->  DetailsTwoDisplayLogic
+    
+    func makeContactsOne() ->  ContactsOneDisplayLogic
+    func makeContactsTwo() ->  ContactsTwoDisplayLogic
+}
 
-class HomeFactory {
+class HomeFactory: HomeFactoryProtocol {
     
     func makeDetailsOne() ->  DetailsOneDisplayLogic {
         let vc =  DetailsOneViewController()

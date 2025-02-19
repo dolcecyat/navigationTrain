@@ -382,8 +382,8 @@
 		412C79CF2D50D4B5006D9383 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				412C79D12D50D4CF006D9383 /* MainCoordinator.swift */,
 				412C7A262D55FFFB006D9383 /* MainFactory.swift */,
+				412C79D12D50D4CF006D9383 /* MainCoordinator.swift */,
 				412C79DE2D50EA3F006D9383 /* MainScreen */,
 				412C79F22D529406006D9383 /* FlowersScreen */,
 				412C7A142D5296A9006D9383 /* BathroomScreen */,
@@ -407,8 +407,8 @@
 		412C79E02D528E6E006D9383 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				412C7A372D56116A006D9383 /* HomeFactory.swift */,
 				412C79E42D529246006D9383 /* HomeCoordinator.swift */,
+				412C7A372D56116A006D9383 /* HomeFactory.swift */,
 				412C7A4D2D56180B006D9383 /* HomeMainScreen */,
 			);
 			path = HomeScreen;
@@ -417,8 +417,8 @@
 		412C79F22D529406006D9383 /* FlowersScreen */ = {
 			isa = PBXGroup;
 			children = (
-				412C7A9F2D562931006D9383 /* FlowersFactory.swift */,
 				412C79F42D52942B006D9383 /* FlowersCoordinator.swift */,
+				412C7A9F2D562931006D9383 /* FlowersFactory.swift */,
 				412C7AA12D562955006D9383 /* FlowersMainScreen */,
 			);
 			path = FlowersScreen;
@@ -427,8 +427,8 @@
 		412C7A042D5294BF006D9383 /* FurnitureScreen */ = {
 			isa = PBXGroup;
 			children = (
-				412C7A6E2D561F7E006D9383 /* FurnitureFactory.swift */,
 				412C7A062D529551006D9383 /* FurnitureCoordinator.swift */,
+				412C7A6E2D561F7E006D9383 /* FurnitureFactory.swift */,
 				412C7A8C2D562237006D9383 /* FurnitureMainScreen */,
 			);
 			path = FurnitureScreen;
@@ -437,8 +437,8 @@
 		412C7A142D5296A9006D9383 /* BathroomScreen */ = {
 			isa = PBXGroup;
 			children = (
-				412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */,
 				412C7A162D529877006D9383 /* BathroomCoordinator.swift */,
+				412C7A9D2D5627DE006D9383 /* BathroomFactory.swift */,
 				412C7A8D2D5626B4006D9383 /* BathroomMainScreen */,
 			);
 			path = BathroomScreen;

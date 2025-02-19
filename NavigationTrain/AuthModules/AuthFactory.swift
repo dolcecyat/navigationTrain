@@ -12,7 +12,6 @@ protocol AuthFactoryProtocol {
     func createSignUpScreen()-> SignUpDisplayLogic
     func createPINCodeScreen()-> PINCodeDisplayLogic
     func createLoggedPINScreen()-> LoggedPINDisplayLogic
-
 }
 
 class AuthFactory: AuthFactoryProtocol {

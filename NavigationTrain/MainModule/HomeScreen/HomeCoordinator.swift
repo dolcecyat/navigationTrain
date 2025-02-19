@@ -17,7 +17,7 @@ protocol HomeCoordinatorProtocol: AnyObject {
 
 class HomeCoordinator {
     private let parentCoordinator = MainCoordinator.shared
-    private let factory = HomeFactory()
+    private let factory: HomeFactoryProtocol = HomeFactory()
 
 }
 

@@ -15,8 +15,6 @@ protocol MainFactoryProtocol {
     func createBathroomScreen() -> BathroomDisplayLogic
     func createFurnitureScreen() -> FurnitureDisplayLogic
     func createHomeScreen() -> HomeDisplayLogic
-
-    
 }
 
 final class MainFactory: MainFactoryProtocol {
