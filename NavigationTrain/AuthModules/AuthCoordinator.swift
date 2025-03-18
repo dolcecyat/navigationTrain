@@ -20,15 +20,15 @@ class AuthCoordinator {
     
     // MARK:  Methods for cardinalCoordinator
     func showAuthScreen()-> AuthDisplayLogic {
-       return factory.createAuthScreen()
+        factory.createAuthScreen()
     }
     
     func showSignUpScreen()-> SignUpDisplayLogic {
-       return factory.createSignUpScreen()
+        factory.createSignUpScreen()
     }
     
     func showLoggedPINScreen()-> LoggedPINDisplayLogic {
-       return factory.createLoggedPINScreen()
+        factory.createLoggedPINScreen()
     }
 }
 extension AuthCoordinator: AuthCoordinatorProtocol {
@@ -46,6 +46,6 @@ extension AuthCoordinator: AuthCoordinatorProtocol {
     }
     
     func openPinScreen()-> UIViewController {
-        return factory.createPINCodeScreen()
+         factory.createPINCodeScreen()
     }
 }

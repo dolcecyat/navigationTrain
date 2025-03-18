@@ -14,7 +14,7 @@ protocol AuthBusinessLogic {
 }
 
 class AuthInteractor: AuthBusinessLogic {
-    var presenter: AuthPresentationLogic?
+    weak var presenter: AuthPresentationLogic?
     var userInfo: UserInfo?
     
     init(){
@@ -25,6 +25,7 @@ class AuthInteractor: AuthBusinessLogic {
         userInfo = UserInfo(password: password, login: login)
         FirebaseAuthManager.shared.logIn(login: login, password: password)
     }
+    
     func checkIfUserLogged() {
         if UDStorageManager.shared.checkIfUserLogged() == true {
             presenter?.userLoggedIn(success: true)
